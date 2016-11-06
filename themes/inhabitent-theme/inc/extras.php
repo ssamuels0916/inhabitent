@@ -20,11 +20,24 @@ function red_starter_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
+
 //add custom logo to wp login
 function my_custom_login_logo() {
      echo '<style type="text/css">                                                                   
-         h1 a { background-image:url('.get_stylesheet_directory_uri().'../images/logos/inhabitent-logo-text-dark.svg) !important; 
-         height: 120px !important; width: 410px !important; margin-left: -40px;}                            
+         h1 a { background-image:url('.get_stylesheet_directory_uri().'/images/logos/inhabitent-logo-text-dark.svg)!important; }                            
      </style>';
 }
 add_action('login_head', 'my_custom_login_logo');
+
+//change URL of custom logo on login page 
+function my_loginURL() {
+    return '#';
+}
+add_filter('login_headerurl', 'my_loginURL');
+
+//change the title tag of this link
+function my_loginURLtext() {
+    return 'Inhabitent Camping Supply Co.';
+}
+add_filter('login_headertitle', 'my_loginURLtext');
+ 

@@ -15,12 +15,12 @@
 								<div class="contact-us">
 									<h3>Contact Us</h3>
 										<p><i class="fa fa-envelope" aria-hidden="true"></i> info@inhabitent.com</p>
-										<p>778-456-7891</p>
-										<p></p>
+										<p><i class="fa fa-phone" aria-hidden="true"></i> 778-456-7891</p>
+										<p><i class="fa fa-facebook-square" aria-hidden="true"></i> <i class="fa fa-twitter-square" aria-hidden="true"></i> <i class="fa fa-google-plus-square" aria-hidden="true"></i></p>
 								</div>
 								<div class="business-hours">
 									<h3>Business Hours</h3>
-										<p>Monday-Friday: 9am to 5pm </p>
+										<p>Monday - Friday: 9am to 5pm </p>
 										<p>Saturday: 10am to 2pm</p>
 										<p>Sunday: Closed</p>
 								</div>

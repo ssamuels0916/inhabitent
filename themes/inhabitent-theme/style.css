@@ -425,7 +425,14 @@ a {
   display: -ms-flexbox;
   display: flex;
   float: left;
-  width: 100%; }
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  height: 55px;
+  top: 32px;
+  padding-top: 10px;
+  background-color: white;
+  border-bottom: 1px solid #a1a1a1; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -445,18 +452,26 @@ a {
       .main-navigation ul ul li.focus > ul {
         left: 100%; }
       .main-navigation ul ul a {
-        width: 200px; }
+        width: 200px;
+        padding-top: 5px; }
     .main-navigation ul li:hover > ul,
     .main-navigation ul li.focus > ul {
       left: auto; }
   .main-navigation li {
     float: left;
-    position: relative; }
+    position: relative;
+    padding: 10px; }
   .main-navigation a {
     display: block;
-    text-decoration: none; }
+    text-decoration: none;
+    color: #248A83;
+    text-transform: uppercase; }
   .main-navigation img {
-    height: 40px; }
+    height: 35px;
+    margin-left: 60px; }
+
+.menu-menu-1-container {
+  margin-right: 100px; }
 
 /* Small menu. */
 .menu-toggle,
@@ -487,6 +502,12 @@ a {
   float: right;
   text-align: right;
   width: 50%; }
+
+.nav-links {
+  display: none; }
+
+.site-header {
+  margin-bottom: 7%; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -599,6 +620,53 @@ a {
 .bypostauthor {
   display: block; }
 
+.comments-area h3 {
+  text-transform: uppercase; }
+
+.entry-header {
+  position: relative; }
+
+.entry-content,
+.entry-header img {
+  width: 65%; }
+
+.entry-meta {
+  position: absolute;
+  background-color: #248A83;
+  color: white;
+  padding: .75rem 1rem;
+  text-transform: uppercase;
+  bottom: 0; }
+  .entry-meta a {
+    text-decoration: none;
+    color: white; }
+
+.entry-title {
+  position: relative;
+  width: 60%;
+  color: white; }
+
+.entry-title,
+.entry-content h2 {
+  text-transform: uppercase;
+  font-size: 2rem; }
+
+.cat-links {
+  padding-right: 20px; }
+
+.entry-title {
+  position: absolute;
+  padding: .75rem 1.5rem;
+  background-color: #248A83;
+  max-width: 75%;
+  left: 0;
+  top: 0;
+  width: 50%; }
+  .entry-title a {
+    text-decoration: none;
+    color: white;
+    height: auto; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -689,6 +757,9 @@ object {
       color: white; }
   .footer-left .contact-us {
     margin-left: 5%; }
+    .footer-left .contact-us .fa {
+      padding: 5px;
+      font-size: 1.3rem; }
   .footer-left .footer-logo {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
@@ -702,3 +773,11 @@ object {
     text-transform: uppercase; }
   .footer-bottom p {
     color: white; }
+
+/*--------------------------------------------------------------
+# Login Logo Styling
+--------------------------------------------------------------*/
+/* Change Width and Height of Logo Image + Add Custom Image File */
+.login h1 a {
+  background-size: 300px;
+  width: 100%; }

@@ -55,3 +55,63 @@
 .bypostauthor {
     display: block;
 }
+
+.comments-area h3 {
+    text-transform: uppercase;
+}
+
+//main content area
+.entry-header {
+    position: relative;
+}
+
+.entry-content,
+.entry-header img {
+    width: 65%;
+}
+
+.entry-meta {
+    position: absolute;
+    background-color: $color_green-brand-colour;
+    color: white;
+    padding: .75rem 1rem;
+    text-transform: uppercase;
+    bottom: 0;
+    //right: 0;
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+//Headers
+.entry-title {
+    position: relative;
+    width: 60%;
+    color: white;
+}
+
+.entry-title,
+.entry-content h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.cat-links {
+    padding-right: 20px;
+}
+
+.entry-title {
+    position: absolute;
+    padding: .75rem 1.5rem;
+    background-color: $color_green-brand-colour;
+    max-width: 75%;
+    left: 0;
+    top: 0;
+    width: 50%;
+    a {
+        text-decoration: none;
+        color: white;
+        height: auto;
+    }
+}

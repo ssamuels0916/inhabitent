@@ -32,6 +32,13 @@ a {
     display: flex;
     float: left;
     width: 100%;
+    position: fixed;
+    z-index: 2;
+    height: 55px;
+    top: 32px;
+    padding-top: 10px;
+    background-color: white;
+    border-bottom: 1px solid $color_light-grey-brand-colour;
     ul {
         display: none;
         list-style: none;
@@ -56,6 +63,7 @@ a {
             }
             a {
                 width: 200px;
+                padding-top: 5px;
             }
              :hover>a,
             .focus>a {}
@@ -70,15 +78,19 @@ a {
     li {
         float: left;
         position: relative;
+        padding: 10px;
         &:hover>a,
         &.focus>a {}
     }
     a {
         display: block;
         text-decoration: none;
+        color: $color_green-brand-colour;
+        text-transform: uppercase;
     }
     img {
-        height: 40px;
+        height: 35px;
+        margin-left: 60px;
     }
     .current_page_item>a,
     .current-menu-item>a,
@@ -86,7 +98,7 @@ a {
 }
 
 .menu-menu-1-container {
-    //padding: 2%;
+    margin-right: 100px;
 }
 
 
@@ -122,4 +134,13 @@ a {
         text-align: right;
         width: 50%;
     }
+}
+
+.nav-links {
+    display: none;
+}
+
+//header
+.site-header {
+    margin-bottom: 7%;
 }
