@@ -781,3 +781,17 @@ object {
 .login h1 a {
   background-size: 300px;
   width: 100%; }
+
+/*--------------------------------------------------------------
+# Front-page
+--------------------------------------------------------------*/
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("\a  ../../images/home-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 162vh;
+  width: 100vw;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
