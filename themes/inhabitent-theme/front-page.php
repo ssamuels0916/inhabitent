@@ -31,7 +31,9 @@ get_header(); ?>
                 <div class = "adventure-block">
 
                     <div class = "left-block">
-                        <a class  = "adventure-text" href="<?php the_permalink(); ?>">Getting Back to Nature in a Canoe</a>
+                        <h3>Getting Back to Nature in a Canoe</h3>
+                        <a class  = "adventure-text" href="<?php the_permalink(); ?>">Read More</a>
+                        
                     </div>
 
                         <div class = "right-block">

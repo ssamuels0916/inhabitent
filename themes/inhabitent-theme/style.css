@@ -835,13 +835,15 @@ body .hero-image {
   background-position-x: 50%;
   margin-right: 15px;
   position: relative; }
-  .left-block a {
-    text-decoration: none;
+  .left-block h3 {
     color: white;
     position: absolute;
     line-height: 2.5rem;
     font-size: 2.5rem;
     padding: 25% 13%; }
+  .left-block a {
+    text-decoration: none;
+    color: white; }
 
 .right-block {
   display: -ms-flexbox;

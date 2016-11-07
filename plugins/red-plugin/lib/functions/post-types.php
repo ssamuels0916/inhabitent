@@ -39,8 +39,7 @@ function register_product_post_type() {
 		'label'                 => 'Product',
 		'description'           => 'Products sold by Inhabitent',
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail', 'custom-fields', ),
-		'taxonomies'            => array( 'category' ),
+		'supports'              => array( 'title', 'editor', 'thumbnail', ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
@@ -50,12 +49,12 @@ function register_product_post_type() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => false,
-		'has_archive'           => true,		
+		'has_archive'           => 'product',		
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post',
 	);
-	register_post_type( 'product_type', $args );
+	register_post_type( 'product', $args );
 
 }
 add_action( 'init', 'register_product_post_type', 0 );
