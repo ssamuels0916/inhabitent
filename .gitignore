@@ -12,6 +12,9 @@ WP .gitignore
 plugins/*
 !plugins/inhabitent-functionality/
 !plugins/business-hours-widget/
+!plugins/theme-check/
+!plugins/query-monitor/
+!plugins/red-plugin/
 
 # Ignore everything in "themes" except the active theme. #
 themes/*

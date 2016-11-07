@@ -429,10 +429,11 @@ a {
   position: fixed;
   z-index: 2;
   height: 55px;
-  top: 32px;
+  top: 0;
   padding-top: 10px;
   background-color: white;
-  border-bottom: 1px solid #a1a1a1; }
+  border-bottom: 1px solid #a1a1a1;
+  background-color: rgba(255, 255, 255, 0.6); }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -785,16 +786,35 @@ object {
 /*--------------------------------------------------------------
 # Front-page
 --------------------------------------------------------------*/
-.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("\a  ../../images/home-hero.jpg");
+body .hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/home-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 162vh;
+  height: 100vh;
   width: 100vw;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+  margin: 0; }
+
+/******************* Shopping  Section *******************/
+.shop-stuff h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem; }
+
+/******************* Inhabitent Journal Section *******************/
+.inhabitent-journal h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem; }
+
+/******************* Adventure  Section *******************/
+.adventure h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem; }
 
 .adventure-block {
   display: -ms-flexbox;
@@ -803,17 +823,25 @@ object {
       flex-flow: row wrap;
   -ms-flex-line-pack: justify;
       align-content: space-between;
-  width: 100vw;
-  height: 100vh;
+  height: 600px;
   margin: 40px 40px; }
 
 .left-block {
-  background-image: url("../../images/adventure-photos/canoe-girl.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/adventure-photos/canoe-girl.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 99%;
   width: 40%;
-  background-position-x: -87px; }
+  background-position-x: 50%;
+  margin-right: 15px;
+  position: relative; }
+  .left-block a {
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    line-height: 2.5rem;
+    font-size: 2.5rem;
+    padding: 25% 13%; }
 
 .right-block {
   display: -ms-flexbox;
@@ -822,16 +850,49 @@ object {
       flex-flow: row wrap;
   width: 600px; }
   .right-block .beach {
-    background-image: url("../../images/adventure-photos/beach-bonfire.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/adventure-photos/beach-bonfire.jpg");
     background-repeat: no-repeat;
-    background-position-y: -87px;
+    background-position: 50%;
     background-size: cover;
-    height: 42vh;
-    width: 100%; }
+    height: 47%;
+    width: 100%;
+    margin-bottom: 20px; }
+    .right-block .beach a {
+      text-decoration: none;
+      color: white;
+      position: absolute;
+      line-height: 2.5rem;
+      font-size: 2.5rem;
+      padding: 8% 5%;
+      width: 50%; }
   .right-block .mountain {
-    background-image: url("../../images/adventure-photos/mountain-hikers.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/adventure-photos/mountain-hikers.jpg");
     background-repeat: no-repeat;
-    background-position-y: -87px;
+    background-position: 51%;
     background-size: cover;
-    height: 42vh;
-    width: 60%; }
+    height: 48%;
+    width: 48%;
+    margin-right: 20px; }
+    .right-block .mountain a {
+      text-decoration: none;
+      color: white;
+      position: absolute;
+      line-height: 2.5rem;
+      font-size: 2.5rem;
+      padding: 5%;
+      width: 25%; }
+  .right-block .stars {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/adventure-photos/night-sky.jpg");
+    background-repeat: no-repeat;
+    background-position: 55%;
+    background-size: cover;
+    height: 48%;
+    width: 48%; }
+    .right-block .stars a {
+      text-decoration: none;
+      color: white;
+      position: absolute;
+      line-height: 2.5rem;
+      font-size: 2.5rem;
+      padding: 5%;
+      width: 25%; }
