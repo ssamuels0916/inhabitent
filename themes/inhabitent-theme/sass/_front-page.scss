@@ -16,3 +16,46 @@
 .hero-img {
     // margin: 0 auto;
 }
+
+//Shopping section
+//Inhabitent Journal posts section
+//Adventure section
+.adventure-block {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    margin: 40px 40px;
+}
+
+.left-block {
+    background-image: url('../../images/adventure-photos/canoe-girl.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 40%;
+    background-position-x: -87px;
+}
+
+.right-block {
+    display: flex;
+    flex-flow: row wrap;
+    width: 600px;
+    .beach {
+        background-image: url('../../images/adventure-photos/beach-bonfire.jpg');
+        background-repeat: no-repeat;
+        background-position-y: -87px;
+        background-size: cover;
+        height: 42vh;
+        width: 100%;
+    }
+    .mountain {
+        background-image: url('../../images/adventure-photos/mountain-hikers.jpg');
+        background-repeat: no-repeat;
+        background-position-y: -87px;
+        background-size: cover;
+        height: 42vh;
+        width: 60%;
+    }
+}

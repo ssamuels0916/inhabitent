@@ -506,9 +506,6 @@ a {
 .nav-links {
   display: none; }
 
-.site-header {
-  margin-bottom: 7%; }
-
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -640,6 +637,9 @@ a {
   .entry-meta a {
     text-decoration: none;
     color: white; }
+
+.site-main {
+  margin-top: 7%; }
 
 .entry-title {
   position: relative;
@@ -795,3 +795,43 @@ object {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center; }
+
+.adventure-block {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  margin: 40px 40px; }
+
+.left-block {
+  background-image: url("../../images/adventure-photos/canoe-girl.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 40%;
+  background-position-x: -87px; }
+
+.right-block {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  width: 600px; }
+  .right-block .beach {
+    background-image: url("../../images/adventure-photos/beach-bonfire.jpg");
+    background-repeat: no-repeat;
+    background-position-y: -87px;
+    background-size: cover;
+    height: 42vh;
+    width: 100%; }
+  .right-block .mountain {
+    background-image: url("../../images/adventure-photos/mountain-hikers.jpg");
+    background-repeat: no-repeat;
+    background-position-y: -87px;
+    background-size: cover;
+    height: 42vh;
+    width: 60%; }
