@@ -1,0 +1,27 @@
+/*--------------------------------------------------------------
+# Sidebar
+--------------------------------------------------------------*/
+
+.side-bar {
+    flex-basis: 25%;
+    border-left: 1px solid #e1e1e1;
+    padding-left: 2rem;
+}
+
+.contact-info-sidebar {
+    padding-top: 48px;
+    a {
+        text-decoration: none;
+        color: #248a83;
+        i {
+            color: black;
+        }
+    }
+}
+
+.archives {
+    a {
+        text-decoration: none;
+        color: #248a83;
+    }
+}

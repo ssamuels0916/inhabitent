@@ -474,6 +474,10 @@ a {
 .menu-menu-1-container {
   margin-right: 100px; }
 
+/** logged in **/
+.admin-bar .main-navigation {
+  top: 32px; }
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -578,7 +582,7 @@ a {
   display: none; }
 
 /*--------------------------------------------------------------
-# Content
+# Content - Home
 --------------------------------------------------------------*/
 /* Posts and pages */
 .sticky {
@@ -621,23 +625,9 @@ a {
 .comments-area h3 {
   text-transform: uppercase; }
 
-.entry-header {
-  position: relative; }
-
 .entry-content,
 .entry-header img {
   width: 65%; }
-
-.entry-meta {
-  position: absolute;
-  background-color: #248A83;
-  color: white;
-  padding: .75rem 1rem;
-  text-transform: uppercase;
-  bottom: 0; }
-  .entry-meta a {
-    text-decoration: none;
-    color: white; }
 
 .site-main {
   margin-top: 7%; }
@@ -655,6 +645,9 @@ a {
 .cat-links {
   padding-right: 20px; }
 
+.entry-header {
+  position: relative; }
+
 .entry-title {
   position: absolute;
   padding: .75rem 1.5rem;
@@ -667,6 +660,18 @@ a {
     text-decoration: none;
     color: white;
     height: auto; }
+
+.type-product.entry-meta {
+  position: absolute;
+  background-color: #248A83;
+  color: white;
+  padding: .75rem 1rem;
+  text-transform: uppercase;
+  bottom: 0;
+  left: 0; }
+  .type-product.entry-meta a {
+    text-decoration: none;
+    color: white; }
 
 /*--------------------------------------------------------------
 # Media
@@ -843,7 +848,15 @@ body .hero-image {
     padding: 25% 13%; }
   .left-block a {
     text-decoration: none;
-    color: white; }
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+    position: absolute;
+    top: 260px;
+    left: 64px; }
+    .left-block a:hover {
+      background-color: #248A83;
+      border: none; }
 
 .right-block {
   display: -ms-flexbox;
@@ -856,17 +869,28 @@ body .hero-image {
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: cover;
+    position: relative;
     height: 47%;
     width: 100%;
     margin-bottom: 20px; }
-    .right-block .beach a {
-      text-decoration: none;
-      color: white;
+    .right-block .beach h3 {
       position: absolute;
       line-height: 2.5rem;
       font-size: 2.5rem;
       padding: 8% 5%;
-      width: 50%; }
+      width: 100%;
+      color: white; }
+    .right-block .beach a {
+      text-decoration: none;
+      color: white;
+      padding: 10px;
+      border: 1px solid white;
+      position: absolute;
+      top: 180px;
+      left: 33px; }
+      .right-block .beach a:hover {
+        background-color: #248A83;
+        border: none; }
   .right-block .mountain {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/adventure-photos/mountain-hikers.jpg");
     background-repeat: no-repeat;
@@ -874,27 +898,86 @@ body .hero-image {
     background-size: cover;
     height: 48%;
     width: 48%;
-    margin-right: 20px; }
-    .right-block .mountain a {
-      text-decoration: none;
-      color: white;
+    margin-right: 20px;
+    position: relative; }
+    .right-block .mountain h3 {
       position: absolute;
       line-height: 2.5rem;
       font-size: 2.5rem;
-      padding: 5%;
-      width: 25%; }
+      padding: 3%;
+      width: 100%;
+      color: white; }
+    .right-block .mountain a {
+      text-decoration: none;
+      color: white;
+      border: 1px solid white;
+      position: absolute;
+      margin: 0 0;
+      padding: 10px;
+      top: 190px;
+      left: 11px; }
+      .right-block .mountain a:hover {
+        background-color: #248A83;
+        border: none; }
   .right-block .stars {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/adventure-photos/night-sky.jpg");
     background-repeat: no-repeat;
     background-position: 55%;
     background-size: cover;
     height: 48%;
-    width: 48%; }
-    .right-block .stars a {
-      text-decoration: none;
+    width: 48%;
+    position: relative; }
+    .right-block .stars h3 {
       color: white;
       position: absolute;
       line-height: 2.5rem;
       font-size: 2.5rem;
       padding: 5%;
-      width: 25%; }
+      width: 100%; }
+    .right-block .stars a {
+      text-decoration: none;
+      color: white;
+      border: 1px solid white;
+      position: absolute;
+      margin: 0 0;
+      padding: 10px;
+      top: 190px;
+      left: 17px; }
+      .right-block .stars a:hover {
+        background-color: #248A83;
+        border: none; }
+
+/*--------------------------------------------------------------
+# Sidebar
+--------------------------------------------------------------*/
+.side-bar {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  border-left: 1px solid #e1e1e1;
+  padding-left: 2rem; }
+
+.contact-info-sidebar {
+  padding-top: 48px; }
+  .contact-info-sidebar a {
+    text-decoration: none;
+    color: #248a83; }
+    .contact-info-sidebar a i {
+      color: black; }
+
+.archives a {
+  text-decoration: none;
+  color: #248a83; }
+
+/*--------------------------------------------------------------
+# Archive - Product
+--------------------------------------------------------------*/
+h1.page-title {
+  text-align: center;
+  text-transform: uppercase; }
+
+.entry-content p {
+  display: none; }
+
+.allProducts {
+  display: -ms-flexbox;
+  display: flex; }

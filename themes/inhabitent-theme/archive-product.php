@@ -20,12 +20,14 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
+			<div class = "allProducts">
 			<?php while ( have_posts() ) : the_post(); ?>
-
+<div class="productDetails">
 				<?php
 					get_template_part( 'template-parts/content' );
-				?>
-
+				?>	
+			<?php echo CFS()->get( 'product_price' ); ?>
+			</div>
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
@@ -35,7 +37,7 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
-
+</div> <!--end of allProducts-->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

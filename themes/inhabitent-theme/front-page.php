@@ -38,13 +38,16 @@ get_header(); ?>
 
                         <div class = "right-block">
                             <div class = "beach">
-                              <a class  = "adventure-text" href="<?php the_permalink(); ?>">A Night with Friends at the Beach</a>  
+                                <h3>A Night with Friends at the Beach</h3>
+                              <a class  = "adventure-text" href="<?php the_permalink(); ?>">Read More</a>  
                             </div>
                             <div class = "mountain">
-                                <a class  = "adventure-text" href="<?php the_permalink(); ?>">Taking in the View at Big Mountain</a> 
+                                <h3>Taking in the View at Big Mountain</h3>
+                                <a class  = "adventure-text" href="<?php the_permalink(); ?>">Read More</a> 
                             </div>
                             <div class = "stars">
-                                <a class  = "adventure-text" href="<?php the_permalink(); ?>">Star-gazing at the Night Sky</a> 
+                                <h3>Star-gazing at the Night Sky</h3>
+                                <a class  = "adventure-text" href="<?php the_permalink(); ?>">Read More</a> 
                             </div>
                         </div>
                     </div>
