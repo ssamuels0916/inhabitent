@@ -682,17 +682,17 @@ a {
     font-size: 1rem; }
 
 /* Find Us Page  */
-.page .entry-title {
+.page-template-page-find-us .entry-title {
   margin-top: 10%; }
 
-.page .site-content {
+.page-template-page-find-us .site-content {
   display: -ms-flexbox;
   display: flex; }
 
-.page .site-main {
+.page-template-page-find-us .site-main {
   width: 70%; }
 
-.page .contact-info {
+.page-template-page-find-us .contact-info {
   margin-top: 40%; }
 
 .page .wpcf7-form-control {
@@ -839,6 +839,27 @@ body .hero-image {
   text-transform: uppercase;
   text-align: center;
   font-size: 2rem; }
+
+.home .get-posts {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 10% 0 10%; }
+
+.home .post-content {
+  margin: 15px;
+  width: 30%;
+  line-height: 1.2rem; }
+  .home .post-content h3 a {
+    text-decoration: none;
+    color: black; }
+  .home .post-content img {
+    max-height: 250px; }
+  .home .post-content .read {
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 10px;
+    color: black;
+    text-transform: uppercase; }
 
 /******************* Adventure  Section *******************/
 .adventure h2 {

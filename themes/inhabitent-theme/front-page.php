@@ -17,6 +17,21 @@ get_header(); ?>
 
             <section class = "shop-stuff">
                 <h2>Shop Stuff</h2>
+                    
+                <?php
+                $terms = get_terms('product_type');
+                foreach ($terms as $term):
+                ?>
+                <div>
+               
+                <?php $url = get_term_link($term->slug, 'product_type'); ?>
+                <img src = "<?php echo get_template_directory_uri() ?>/images/product-type-icons/<?php echo $term->slug ?>.svg" />
+                <!--term meta api *try later-->
+                <p><?php echo $term->description ?></p>
+                <p><a href="<?php echo $url ?>"><?php echo $term->name ?> Stuff</a></p>
+                <?php endforeach; ?>
+                 </div>
+                
             </section>
 
 <!--   Inhabitent Journal Section -->
@@ -36,6 +51,7 @@ get_header(); ?>
 
 <?php foreach ( $product_posts as $post ) : setup_postdata( $post );
  ?>
+ <div class = "post-content">
    <?php the_post_thumbnail(); ?>
    <p>
        <?php the_date(); ?> <?php 
@@ -44,11 +60,11 @@ get_header(); ?>
         ?>
 </p>
    
-    <h2><a href = "<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-		<a href = "<?php the_permalink(); ?>">Read entry</a>
+    <h3><a href = "<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+		<a class = "read" href = "<?php the_permalink(); ?>">Read entry</a>
 		<br />
 
-
+</div>
 		 
 
 <?php endforeach; 

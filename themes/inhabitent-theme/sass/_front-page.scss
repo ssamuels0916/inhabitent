@@ -31,6 +31,31 @@ body .hero-image {
     font-size: 2rem;
 }
 
+.home .get-posts {
+    display: flex;
+    margin: 0 10% 0 10%;
+}
+
+.home .post-content {
+    margin: 15px;
+    width: 30%;
+    line-height: 1.2rem;
+    h3 a {
+        text-decoration: none;
+        color: black;
+    }
+    img {
+        max-height: 250px;
+    }
+    .read {
+        text-decoration: none;
+        border: 1px solid black;
+        padding: 10px;
+        color: black;
+        text-transform: uppercase;
+    }
+}
+
 
 /******************* Adventure  Section *******************/
 
