@@ -8,6 +8,11 @@
     select {
         max-width: 100%;
     }
+    ul {
+        list-style: none;
+        padding-left: 0px;
+        margin: 0
+    }
 }
 
 
@@ -29,4 +34,8 @@
             color: black;
         }
     }
+}
+
+span.day-of-week {
+    font-weight: bold;
 }
