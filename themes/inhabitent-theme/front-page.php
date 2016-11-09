@@ -23,7 +23,45 @@ get_header(); ?>
 
             <section class = "inhabitent-journal">
                 <h2>Inhabitent Journal</h2>
+    <div class="get-posts">
+  	<!--get_posts()-->
+               
+<?php
+   $args = array( 'post_type' => 'post',
+   'posts_per_page' => 3,
+    'order' => 'DESC',);
+
+   $product_posts = get_posts( $args ); // returns an array of posts
+?>
+
+<?php foreach ( $product_posts as $post ) : setup_postdata( $post );
+ ?>
+   <?php the_post_thumbnail(); ?>
+   <p>
+       <?php the_date(); ?> <?php 
+        $comments_count = wp_count_comments();
+        echo $comments_count->approved . " Comments";
+        ?>
+</p>
+   
+    <h2><a href = "<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+		<a href = "<?php the_permalink(); ?>">Read entry</a>
+		<br />
+
+
+		 
+
+<?php endforeach; 
+wp_reset_postdata(); ?>
+
+
+</div>
+
+
+
+
             </section>   
+
 
 <!--   Adventure Section -->
             <section class="adventure">
@@ -58,5 +96,5 @@ get_header(); ?>
 		<!--</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

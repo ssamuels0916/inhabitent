@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages.
+ * Template Name: find-us
  *
  * @package Inhabitent_Theme
  */
@@ -19,5 +19,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<!--<?php get_sidebar(); ?>-->
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>

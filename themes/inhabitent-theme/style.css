@@ -298,9 +298,12 @@ body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */ }
 
-blockquote, q {
+blockquote,
+q {
   quotes: "" ""; }
-  blockquote:before, blockquote:after, q:before, q:after {
+  blockquote:before, blockquote:after,
+  q:before,
+  q:after {
     content: ""; }
 
 hr {
@@ -309,7 +312,8 @@ hr {
   height: 1px;
   margin-bottom: 1.5em; }
 
-ul, ol {
+ul,
+ol {
   margin: 0 0 1.5em 3em; }
 
 ul {
@@ -330,8 +334,7 @@ dd {
   margin: 0 1.5em 1.5em; }
 
 img {
-  height: auto;
-  /* Make sure images are scaled correctly. */
+  /*height: auto;  Make sure images are scaled correctly. */
   max-width: 100%;
   /* Adhere to container width. */ }
 
@@ -582,7 +585,7 @@ a {
   display: none; }
 
 /*--------------------------------------------------------------
-# Content - Home
+# Content 
 --------------------------------------------------------------*/
 /* Posts and pages */
 .sticky {
@@ -598,7 +601,7 @@ a {
 .group-blog .byline {
   display: inline; }
 
-.content-area {
+.blog .content-area {
   margin-left: 5%; }
 
 .page-content,
@@ -625,53 +628,75 @@ a {
 .comments-area h3 {
   text-transform: uppercase; }
 
-.entry-content,
-.entry-header img {
+.blog .entry-content .entry-header img {
   width: 65%; }
 
-.site-main {
+.blog .site-main {
   margin-top: 7%; }
 
-.entry-title {
+.blog .entry-title {
   position: relative;
   width: 60%;
   color: white; }
 
-.entry-title,
-.entry-content h2 {
+.blog .entry-title .entry-content h2 {
   text-transform: uppercase;
   font-size: 2rem; }
 
 .cat-links {
   padding-right: 20px; }
 
-.entry-header {
+/* About Page Image Area */
+.page-template-about .about_photo {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 5%;
+  background-position: 25% 75%;
   position: relative; }
-
-.entry-title {
-  position: absolute;
-  padding: .75rem 1.5rem;
-  background-color: #248A83;
-  max-width: 75%;
-  left: 0;
-  top: 0;
-  width: 50%; }
-  .entry-title a {
-    text-decoration: none;
+  .page-template-about .about_photo h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     color: white;
-    height: auto; }
+    font-size: 2.25rem;
+    text-transform: uppercase; }
 
-.type-product.entry-meta {
-  position: absolute;
-  background-color: #248A83;
-  color: white;
-  padding: .75rem 1rem;
-  text-transform: uppercase;
-  bottom: 0;
-  left: 0; }
-  .type-product.entry-meta a {
-    text-decoration: none;
-    color: white; }
+.page-template-about .content-area {
+  margin: 0; }
+
+.page-template-about .site-main {
+  width: 100%; }
+
+.page-template-about .site-main {
+  margin-top: 0; }
+
+.page-template-about .about_copy {
+  margin: 0 10% 25% 10%; }
+  .page-template-about .about_copy h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.25rem; }
+  .page-template-about .about_copy p {
+    font-size: 1rem; }
+
+/* Find Us Page  */
+.page .entry-title {
+  margin-top: 10%; }
+
+.page .site-content {
+  display: -ms-flexbox;
+  display: flex; }
+
+.page .site-main {
+  width: 70%; }
+
+.page .contact-info {
+  margin-top: 40%; }
+
+.page .wpcf7-form-control {
+  color: #248A83; }
 
 /*--------------------------------------------------------------
 # Media
@@ -954,7 +979,7 @@ body .hero-image {
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
   border-left: 1px solid #e1e1e1;
-  padding-left: 2rem; }
+  padding: 0 2rem 0 2rem; }
 
 .contact-info-sidebar {
   padding-top: 48px; }
@@ -973,11 +998,71 @@ body .hero-image {
 --------------------------------------------------------------*/
 h1.page-title {
   text-align: center;
-  text-transform: uppercase; }
-
-.entry-content p {
-  display: none; }
+  text-transform: uppercase;
+  margin: 5% 0 10% 0; }
 
 .allProducts {
   display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  margin-bottom: 5%; }
+  .allProducts .productDetails {
+    width: 25%;
+    height: 300px;
+    margin-bottom: 2%; }
+
+.archive .entry-header img {
+  max-height: 250px; }
+
+.archive .entry-content {
+  display: none; }
+
+.archive .entry-title {
+  font-size: 1rem;
+  color: black; }
+
+/*--------------------------------------------------------------
+# Home - Journal page styling
+--------------------------------------------------------------*/
+.blog .content-area {
+  display: -ms-flexbox;
   display: flex; }
+
+.blog .entry-header {
+  position: relative;
+  margin-right: 2rem; }
+  .blog .entry-header img {
+    width: 100%; }
+
+.blog .entry-title {
+  position: absolute;
+  padding: .75rem 1.5rem;
+  background-color: #248A83;
+  /*max-width: 70%;*/
+  left: 0;
+  top: 0;
+  /*width: 50%;*/
+  margin-top: 2.25rem; }
+  .blog .entry-title a {
+    text-decoration: none;
+    color: white;
+    height: auto; }
+
+.blog .entry-meta {
+  position: absolute;
+  background-color: #248A83;
+  color: white;
+  padding: .75rem 1rem;
+  text-transform: uppercase;
+  bottom: 6px;
+  right: 0; }
+  .blog .entry-meta a {
+    text-decoration: none;
+    color: white; }
+
+.blog .site-main {
+  width: 75%; }
+
+.blog .contact-info {
+  margin-top: 40%; }

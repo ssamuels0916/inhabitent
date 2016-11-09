@@ -21,8 +21,8 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
 			<div class = "allProducts">
-			<?php while ( have_posts() ) : the_post(); ?>
-<div class="productDetails">
+			<?php while ( have_posts() ) : the_post(); ?>	
+			<div class="productDetails">
 				<?php
 					get_template_part( 'template-parts/content' );
 				?>	
@@ -30,16 +30,16 @@ get_header(); ?>
 			</div>
 			<?php endwhile; ?>
 
-			<?php the_posts_navigation(); ?>
-
+			<!--<?php the_posts_navigation(); ?>-->
+</div>
 		<?php else : ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
-</div> <!--end of allProducts-->
+ <!--end of allProducts-->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+<!--<?php get_sidebar(); ?>-->
 <?php get_footer(); ?>

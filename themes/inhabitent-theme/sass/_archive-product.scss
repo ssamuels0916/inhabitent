@@ -5,12 +5,31 @@
 h1.page-title {
     text-align: center;
     text-transform: uppercase;
-}
-
-.entry-content p {
-    display: none;
+    margin: 5% 0 10% 0;
 }
 
 .allProducts {
     display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 5%;
+    .productDetails {
+        width: 25%;
+        height: 300px;
+        margin-bottom: 2%;
+    }
+}
+
+.archive .entry-header {
+    img {
+        max-height: 250px;
+    }
+}
+
+.archive .entry-content {
+    display: none;
+}
+
+.archive .entry-title {
+    font-size: 1rem;
+    color: black;
 }

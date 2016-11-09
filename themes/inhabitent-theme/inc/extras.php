@@ -20,14 +20,20 @@ function red_starter_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
+/*
+*Add custom logo to wp login
+*/
 
-//add custom logo to wp login
-function my_custom_login_logo() {
-     echo '<style type="text/css">                                                                   
-         h1 a { background-image:url('.get_stylesheet_directory_uri().'/images/logos/inhabitent-logo-text-dark.svg)!important; }                            
-     </style>';
-}
-add_action('login_head', 'my_custom_login_logo');
+function my_login_logo() { ?>
+<style type="text/css">
+       #login h1 a, .login h1 a {
+           background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-text-dark.svg);
+           padding-bottom: 30px;
+            background-size: 300px !important; width: 300px !important;background-position: bottom !important;
+       }
+   </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
 
 //change URL of custom logo on login page 
 function my_loginURL() {
@@ -41,3 +47,22 @@ function my_loginURLtext() {
 }
 add_filter('login_headertitle', 'my_loginURLtext');
  
+/*
+*Custom About Page background Image
+*/
+   
+
+function my_styles_method() {
+
+     if(!is_page_template( 'about.php' )){
+        return;
+    }
+       $url = CFS()->get('about_page_photo');
+        $custom_css = "
+                .about_photo{
+                        background-image: url( {$url});
+                }";
+        wp_add_inline_style( 'red-starter-style', $custom_css );
+}
+add_action( 'wp_enqueue_scripts', 'my_styles_method' );
+?>

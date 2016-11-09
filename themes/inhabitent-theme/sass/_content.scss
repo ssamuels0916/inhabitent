@@ -1,5 +1,5 @@
 /*--------------------------------------------------------------
-# Content - Home
+# Content 
 --------------------------------------------------------------*/
 
 
@@ -22,7 +22,7 @@
     display: inline;
 }
 
-.content-area {
+.blog .content-area {
     margin-left: 5%;
 }
 
@@ -60,25 +60,23 @@
     text-transform: uppercase;
 }
 
-//main content area
-.entry-content,
-.entry-header img {
+//main content area - Journal Page
+.blog .entry-content .entry-header img {
     width: 65%;
 }
 
-.site-main {
+.blog .site-main {
     margin-top: 7%;
 }
 
-//Headers
-.entry-title {
+//Headers - Journal Page
+.blog .entry-title {
     position: relative;
     width: 60%;
     color: white;
 }
 
-.entry-title,
-.entry-content h2 {
+.blog .entry-title .entry-content h2 {
     text-transform: uppercase;
     font-size: 2rem;
 }
@@ -87,37 +85,70 @@
     padding-right: 20px;
 }
 
-//blog styling meta and header
-.entry-header {
+
+/* About Page Image Area */
+
+.page-template-about .about_photo {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 5%;
+    background-position: 25% 75%;
     position: relative;
-}
-
-.entry-title {
-    position: absolute;
-    padding: .75rem 1.5rem;
-    background-color: $color_green-brand-colour;
-    max-width: 75%;
-    left: 0;
-    top: 0;
-    width: 50%;
-    a {
-        text-decoration: none;
+    h2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
         color: white;
-        height: auto;
+        font-size: 2.25rem;
+        text-transform: uppercase;
     }
 }
 
-.type-product.entry-meta {
-    position: absolute;
-    background-color: $color_green-brand-colour;
-    color: white;
-    padding: .75rem 1rem;
-    text-transform: uppercase;
-    bottom: 0;
-    left: 0;
-    //right: 0;
-    a {
-        text-decoration: none;
-        color: white;
+.page-template-about .content-area {
+    margin: 0;
+}
+
+.page-template-about .site-main {
+    width: 100%;
+}
+
+.page-template-about .site-main {
+    margin-top: 0;
+}
+
+.page-template-about .about_copy {
+    margin: 0 10% 25% 10%;
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 2.25rem;
     }
+    p {
+        font-size: 1rem;
+    }
+}
+
+
+/* Find Us Page  */
+
+.page .entry-title {
+    margin-top: 10%;
+}
+
+.page .site-content {
+    display: flex;
+}
+
+.page .site-main {
+    width: 70%;
+}
+
+.page .contact-info {
+    margin-top: 40%;
+}
+
+.page .wpcf7-form-control {
+    color: $color_green-brand-colour;
 }
