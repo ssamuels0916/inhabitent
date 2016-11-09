@@ -584,6 +584,15 @@ a {
 .widget_search .search-submit {
   display: none; }
 
+/*Style sidebar*/
+.widget-area {
+  padding: 7% 5% 0 5%; }
+  .widget-area a {
+    text-decoration: none;
+    color: #248a83; }
+    .widget-area a i {
+      color: black; }
+
 /*--------------------------------------------------------------
 # Content 
 --------------------------------------------------------------*/
@@ -992,27 +1001,6 @@ body .hero-image {
       .right-block .stars a:hover {
         background-color: #248A83;
         border: none; }
-
-/*--------------------------------------------------------------
-# Sidebar
---------------------------------------------------------------*/
-.side-bar {
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
-  border-left: 1px solid #e1e1e1;
-  padding: 0 2rem 0 2rem; }
-
-.contact-info-sidebar {
-  padding-top: 48px; }
-  .contact-info-sidebar a {
-    text-decoration: none;
-    color: #248a83; }
-    .contact-info-sidebar a i {
-      color: black; }
-
-.archives a {
-  text-decoration: none;
-  color: #248a83; }
 
 /*--------------------------------------------------------------
 # Archive - Product
