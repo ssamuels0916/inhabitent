@@ -23,9 +23,12 @@ Custom archive page title
 
 $terms = get_terms('product_type'); ?>
             <ul class="shop-stuff-content">
-              <?php foreach ($terms as $term): ?>
+              <?php foreach ($terms as $term):
 
-                <?php $url = get_term_link($term->slug, 'product_type'); ?>
+?>
+
+                <?php $url = get_term_link($term->slug, 'product_type');
+?>
 
                   <a href="<?php echo $url ?>"><?php echo $term->name ?></a>
 

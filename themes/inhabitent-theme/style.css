@@ -435,7 +435,7 @@ a {
   top: 0;
   padding-top: 10px;
   background-color: white;
-  border-bottom: 1px solid #a1a1a1;
+  border-bottom: 1px solid #e1e1e1;
   background-color: rgba(255, 255, 255, 0.6); }
   .main-navigation ul {
     display: none;
@@ -647,10 +647,28 @@ span.day-of-week {
 .blog .entry-content .entry-header img {
   width: 65%; }
 
+.single .entry-content .entry-header img {
+  width: 65%; }
+
 .blog .site-main {
   margin-top: 7%; }
 
+#read-more {
+  margin-bottom: 5%; }
+  #read-more a {
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid black;
+    color: black;
+    text-transform: uppercase; }
+
 .blog .entry-title {
+  position: relative;
+  width: 60%;
+  color: white; }
+
+.single .entry-title {
   position: relative;
   width: 60%;
   color: white; }
@@ -662,6 +680,11 @@ span.day-of-week {
 .cat-links {
   padding-right: 20px; }
 
+/*Single Post Pages*/
+.single .site-main {
+  margin-top: 10%; }
+
+/* Find us Page */
 /* About Page Image Area */
 .page-template-about .about_photo {
   height: 100vh;
@@ -850,6 +873,33 @@ body .hero-image {
   text-align: center;
   font-size: 2rem; }
 
+.shop-section {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 5% 10% 5% 10%;
+  padding: 2%; }
+
+.shop-stuff-content {
+  text-align: center;
+  margin-right: 10px;
+  border: 1px solid #e1e1e1;
+  border-top: 3px solid #e1e1e1;
+  padding: 1%; }
+  .shop-stuff-content:hover {
+    border-color: #d99054; }
+  .shop-stuff-content img {
+    height: 70px;
+    width: 70px; }
+  .shop-stuff-content a {
+    text-decoration: none;
+    background-color: #248A83;
+    padding: 15px;
+    color: white; }
+  .shop-stuff-content span {
+    text-transform: uppercase; }
+
 /******************* Inhabitent Journal Section *******************/
 .inhabitent-journal h2 {
   text-transform: uppercase;
@@ -859,29 +909,47 @@ body .hero-image {
 .home .get-posts {
   display: -ms-flexbox;
   display: flex;
-  margin: 0 10% 0 10%; }
+  margin: 0 5%; }
 
 .home .post-content {
   margin: 15px;
-  width: 30%;
-  line-height: 1.2rem; }
+  width: 365.5px;
+  line-height: 1.2rem;
+  border: 1px solid #e1e1e1; }
   .home .post-content h3 a {
     text-decoration: none;
     color: black; }
+    .home .post-content h3 a:hover {
+      color: #248A83; }
   .home .post-content img {
-    max-height: 250px; }
-  .home .post-content .read {
+    max-height: 250px;
+    border-bottom: 5px solid #e1e1e1; }
+  .home .post-content a.read {
     text-decoration: none;
     border: 1px solid black;
     padding: 10px;
     color: black;
     text-transform: uppercase; }
+    .home .post-content a.read:hover {
+      background-color: #248A83;
+      border: none;
+      color: white; }
+
+.journal-info {
+  margin: 2rem; }
+  .journal-info p {
+    margin: 0; }
+  .journal-info h3 {
+    margin-bottom: 35px; }
 
 /******************* Adventure  Section *******************/
 .adventure h2 {
   text-transform: uppercase;
   text-align: center;
   font-size: 2rem; }
+
+.adventure-text {
+  text-transform: uppercase; }
 
 .adventure-block {
   display: -ms-flexbox;
@@ -891,7 +959,16 @@ body .hero-image {
   -ms-flex-line-pack: justify;
       align-content: space-between;
   height: 600px;
-  margin: 40px 40px; }
+  margin: 40px 40px 140px 40px; }
+  .adventure-block span {
+    margin-top: 3%;
+    padding: 20px;
+    background-color: #248A83;
+    border: none; }
+    .adventure-block span a {
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase; }
 
 .left-block {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/adventure-photos/canoe-girl.jpg");
@@ -1015,28 +1092,61 @@ body .hero-image {
 h1.page-title {
   text-align: center;
   text-transform: uppercase;
-  margin: 5% 0 10% 0; }
+  margin-top: 10%; }
 
-.allProducts {
+.archive .allProducts {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row wrap;
       flex-flow: row wrap;
-  margin-bottom: 5%; }
-  .allProducts .productDetails {
-    width: 25%;
-    height: 300px;
-    margin-bottom: 2%; }
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 1120px;
+  margin: 0 auto; }
+  .archive .allProducts .product-details {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    padding: 10px; }
+    .archive .allProducts .product-details p {
+      margin: 0; }
 
-.archive .entry-header img {
-  max-height: 250px; }
+.archive .entry-header {
+  border: 1px solid #e1e1e1; }
+  .archive .entry-header img {
+    height: 200px;
+    width: 250px;
+    border-bottom: 5px solid #e1e1e1; }
 
 .archive .entry-content {
   display: none; }
 
 .archive .entry-title {
   font-size: 1rem;
-  color: black; }
+  color: black;
+  margin: 0; }
+  .archive .entry-title a {
+    text-decoration: none; }
+
+/*
+Header Styling - sub navigation
+*/
+.archive .page-header {
+  border-bottom: 1px dashed grey;
+  margin: 0 10% 5% 10%; }
+
+.taxonomy-description {
+  text-align: center; }
+
+.archive .shop-stuff-content {
+  text-align: center;
+  padding: 0;
+  margin: 5% 0 5%; }
+  .archive .shop-stuff-content a {
+    margin-right: 5px;
+    text-decoration: none;
+    font-size: 1.2rem; }
 
 /*--------------------------------------------------------------
 # Home - Journal page styling
@@ -1045,10 +1155,20 @@ h1.page-title {
   display: -ms-flexbox;
   display: flex; }
 
+.single .content-area {
+  display: -ms-flexbox;
+  display: flex; }
+
 .blog .entry-header {
   position: relative;
   margin-right: 2rem; }
   .blog .entry-header img {
+    width: 100%; }
+
+.single .entry-header {
+  position: relative;
+  margin-right: 2rem; }
+  .single .entry-header img {
     width: 100%; }
 
 .blog .entry-title {
@@ -1065,6 +1185,20 @@ h1.page-title {
     color: white;
     height: auto; }
 
+.single .entry-title {
+  position: absolute;
+  padding: .75rem 1.5rem;
+  background-color: #248A83;
+  /*max-width: 70%;*/
+  left: 0;
+  top: 0;
+  /*width: 50%;*/
+  margin-top: 2.25rem; }
+  .single .entry-title a {
+    text-decoration: none;
+    color: white;
+    height: auto; }
+
 .blog .entry-meta {
   position: absolute;
   background-color: #248A83;
@@ -1077,8 +1211,26 @@ h1.page-title {
     text-decoration: none;
     color: white; }
 
+.single .entry-meta {
+  position: absolute;
+  background-color: #248A83;
+  color: white;
+  padding: .75rem 1rem;
+  text-transform: uppercase;
+  bottom: 6px;
+  right: 0; }
+  .single .entry-meta a {
+    text-decoration: none;
+    color: white; }
+
 .blog .site-main {
   width: 75%; }
 
+.single .site-main {
+  width: 75%; }
+
 .blog .contact-info {
+  margin-top: 40%; }
+
+.single .contact-info {
   margin-top: 40%; }

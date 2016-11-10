@@ -65,12 +65,34 @@
     width: 65%;
 }
 
+.single .entry-content .entry-header img {
+    width: 65%;
+}
+
 .blog .site-main {
     margin-top: 7%;
 }
 
+#read-more {
+    margin-bottom: 5%;
+    a {
+        text-decoration: none;
+        padding: 10px;
+        margin: 5px;
+        border: 1px solid black;
+        color: black;
+        text-transform: uppercase;
+    }
+}
+
 //Headers - Journal Page
 .blog .entry-title {
+    position: relative;
+    width: 60%;
+    color: white;
+}
+
+.single .entry-title {
     position: relative;
     width: 60%;
     color: white;
@@ -84,6 +106,16 @@
 .cat-links {
     padding-right: 20px;
 }
+
+
+/*Single Post Pages*/
+
+.single .site-main {
+    margin-top: 10%;
+}
+
+
+/* Find us Page */
 
 
 /* About Page Image Area */

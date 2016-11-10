@@ -7,6 +7,10 @@
     display: flex;
 }
 
+.single .content-area {
+    display: flex;
+}
+
 .blog .entry-header {
     position: relative;
     margin-right: 2rem;
@@ -15,7 +19,31 @@
     }
 }
 
+.single .entry-header {
+    position: relative;
+    margin-right: 2rem;
+    img {
+        width: 100%;
+    }
+}
+
 .blog .entry-title {
+    position: absolute;
+    padding: .75rem 1.5rem;
+    background-color: $color_green-brand-colour;
+    /*max-width: 70%;*/
+    left: 0;
+    top: 0;
+    /*width: 50%;*/
+    margin-top: 2.25rem;
+    a {
+        text-decoration: none;
+        color: white;
+        height: auto;
+    }
+}
+
+.single .entry-title {
     position: absolute;
     padding: .75rem 1.5rem;
     background-color: $color_green-brand-colour;
@@ -45,10 +73,32 @@
     }
 }
 
+.single .entry-meta {
+    position: absolute;
+    background-color: $color_green-brand-colour;
+    color: white;
+    padding: .75rem 1rem;
+    text-transform: uppercase;
+    bottom: 6px;
+    right: 0;
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
 .blog .site-main {
     width: 75%;
 }
 
+.single .site-main {
+    width: 75%;
+}
+
 .blog .contact-info {
+    margin-top: 40%;
+}
+
+.single .contact-info {
     margin-top: 40%;
 }

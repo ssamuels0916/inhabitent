@@ -5,23 +5,31 @@
 h1.page-title {
     text-align: center;
     text-transform: uppercase;
-    margin: 5% 0 10% 0;
+    margin-top: 10%;
 }
 
-.allProducts {
+.archive .allProducts {
     display: flex;
     flex-flow: row wrap;
-    margin-bottom: 5%;
-    .productDetails {
-        width: 25%;
-        height: 300px;
-        margin-bottom: 2%;
+    justify-content: space-around;
+    width: 1120px;
+    margin: 0 auto;
+    .product-details {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        p {
+            margin: 0;
+        }
     }
 }
 
 .archive .entry-header {
+    border: 1px solid $color_light-grey-brand-colour;
     img {
-        max-height: 250px;
+        height: 200px;
+        width: 250px;
+        border-bottom: 5px solid $color_light-grey-brand-colour;
     }
 }
 
@@ -32,4 +40,33 @@ h1.page-title {
 .archive .entry-title {
     font-size: 1rem;
     color: black;
+    margin: 0;
+    a {
+        text-decoration: none;
+    }
+}
+
+
+/*
+Header Styling - sub navigation
+*/
+
+.archive .page-header {
+    border-bottom: 1px dashed grey;
+    margin: 0 10% 5% 10%;
+}
+
+.taxonomy-description {
+    text-align: center;
+}
+
+.archive .shop-stuff-content {
+    text-align: center;
+    padding: 0;
+    margin: 5% 0 5%;
+    a {
+        margin-right: 5px;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
 }
