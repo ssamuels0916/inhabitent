@@ -219,9 +219,55 @@ td,
 th {
   padding: 0; }
 
-/*--------------------------------------------------------------
-# Embedded Fonts
---------------------------------------------------------------*/
+@font-face {
+  font-family: 'merriweather';
+  src: url("../fonts/merriweather_light-webfont.eot");
+  src: url("../fonts/merriweather_light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather_light-webfont.woff2") format("woff2"), url("../fonts/merriweather_light-webfont.woff") format("woff"), url("../fonts/merriweather_light-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: 100; }
+
+@font-face {
+  font-family: 'merriweather';
+  src: url("../fonts/merriweather-bold-webfont.eot");
+  src: url("../fonts/merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-bold-webfont.woff2") format("woff2"), url("../fonts/merriweather-bold-webfont.woff") format("woff"), url("../fonts/merriweather-bold-webfont.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'merriweather';
+  src: url("../fonts/merriweather-italic-webfont.eot");
+  src: url("../fonts/merriweather-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-italic-webfont.woff2") format("woff2"), url("../fonts/merriweather-italic-webfont.woff") format("woff"), url("../fonts/merriweather-italic-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'merriweather';
+  src: url("../fonts/merriweather-regular-webfont.eot");
+  src: url("../fonts/merriweather-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-regular-webfont.woff2") format("woff2"), url("../fonts/merriweather-regular-webfont.woff") format("woff"), url("../fonts/merriweather-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecento';
+  src: url("../fonts/Novecentosanswide-Bold-webfont.eot");
+  src: url("../fonts/Novecentosanswide-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Novecentosanswide-Bold-webfont.woff2") format("woff2"), url("../fonts/Novecentosanswide-Bold-webfont.woff") format("woff"), url("../fonts/Novecentosanswide-Bold-webfont.ttf") format("truetype"), url("../fonts/Novecentosanswide-Bold-webfont.svg#novecento_sans_wide_bookbold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecento';
+  src: url("../fonts/Novecentosanswide-Medium-webfont.eot");
+  src: url("../fonts/Novecentosanswide-Medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Novecentosanswide-Medium-webfont.woff2") format("woff2"), url("../fonts/Novecentosanswide-Medium-webfont.woff") format("woff"), url("../fonts/Novecentosanswide-Medium-webfont.ttf") format("truetype"), url("../fonts/Novecentosanswide-Medium-webfont.svg#novecento_sans_widemedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecento';
+  src: url("../fonts/novecentosanswide-normal-webfont.eot");
+  src: url("../fonts/Novecentosanswide-normal-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Novecentosanswide-normal-webfont.woff2") format("woff2"), url("../fonts/Novecentosanswide-normal-webfont.woff") format("woff"), url("../fonts/Novecentosanswide-normal-webfont.ttf") format("truetype"), url("../fonts/Novecentosanswide-normal-webfont.svg#novecento_normal") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -234,17 +280,31 @@ textarea {
   font-family: sans-serif;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.5; }
+  line-height: 1.75; }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  font-family: "Novecento", sans-serif;
+  font-weight: 400;
+  font-style: normal; }
 
 /* Copy */
 p {
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5em;
+  font-family: "merriweather", sans-serif;
+  font-weight: 400;
+  font-style: normal; }
 
-dfn, cite, em, i {
+dfn,
+cite,
+em,
+i {
   font-style: italic; }
 
 blockquote {
@@ -264,21 +324,31 @@ pre {
   overflow: auto;
   padding: 1.6em; }
 
-code, kbd, tt, var {
+code,
+kbd,
+tt,
+var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
   font-size: 0.9375rem; }
 
-abbr, acronym {
+abbr,
+acronym {
   border-bottom: 1px dotted #666;
   cursor: help; }
 
-mark, ins {
+mark,
+ins {
   background: #fff9c0;
   text-decoration: none; }
 
 big {
   font-size: 125%; }
+
+a {
+  font-family: "Novecento", sans-serif;
+  font-weight: 200;
+  font-style: normal; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -989,6 +1059,9 @@ body .hero-image {
     color: white;
     position: absolute;
     line-height: 2.5rem;
+    font-family: 'merriweather';
+    font-weight: 100;
+    font-style: normal;
     font-size: 2.2rem;
     top: 20%;
     padding: 8%;
@@ -1029,6 +1102,9 @@ a.adventure-text {
         color: white;
         position: absolute;
         line-height: 2.5rem;
+        font-family: 'merriweather';
+        font-weight: 100;
+        font-style: normal;
         font-size: 2.2rem;
         top: 20%;
         padding: 8%;
@@ -1062,6 +1138,9 @@ a.adventure-text {
         color: white;
         position: absolute;
         line-height: 2.5rem;
+        font-family: 'merriweather';
+        font-weight: 100;
+        font-style: normal;
         font-size: 2.2rem;
         top: 20%;
         padding: 8%;
@@ -1095,6 +1174,9 @@ a.adventure-text {
         color: white;
         position: absolute;
         line-height: 2.5rem;
+        font-family: 'merriweather';
+        font-weight: 100;
+        font-style: normal;
         font-size: 2.2rem;
         top: 20%;
         padding: 8%;
