@@ -7,7 +7,7 @@
     display: flex;
 }
 
-.single .content-area {
+.single-post .content-area {
     display: flex;
 }
 
@@ -19,7 +19,7 @@
     }
 }
 
-.single .entry-header {
+.single-post .entry-header {
     position: relative;
     margin-right: 2rem;
     img {
@@ -43,7 +43,7 @@
     }
 }
 
-.single .entry-title {
+.single-post .entry-title {
     position: absolute;
     padding: .75rem 1.5rem;
     background-color: $color_green-brand-colour;
@@ -73,7 +73,7 @@
     }
 }
 
-.single .entry-meta {
+.single-post .entry-meta {
     position: absolute;
     background-color: $color_green-brand-colour;
     color: white;
@@ -91,14 +91,15 @@
     width: 75%;
 }
 
-.single .site-main {
+.single-post .site-main {
     width: 75%;
+    margin-left: 5%;
 }
 
 .blog .contact-info {
     margin-top: 40%;
 }
 
-.single .contact-info {
+.single-post .contact-info {
     margin-top: 40%;
 }

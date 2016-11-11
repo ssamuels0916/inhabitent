@@ -26,7 +26,7 @@
 /*Style sidebar*/
 
 .widget-area {
-    padding: 7% 5% 0 5%;
+    padding: 10% 5% 0 5%;
     a {
         text-decoration: none;
         color: #248a83;
@@ -34,6 +34,10 @@
             color: black;
         }
     }
+}
+
+.widget-title {
+    text-transform: uppercase;
 }
 
 span.day-of-week {

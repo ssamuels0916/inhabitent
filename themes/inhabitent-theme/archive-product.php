@@ -22,7 +22,7 @@ Custom archive page title
 */
 
 $terms = get_terms('product_type'); ?>
-            <ul class="shop-stuff-content">
+            <ul class="shop-stuff-items">
               <?php foreach ($terms as $term): ?>
 
                 <?php $url = get_term_link($term->slug, 'product_type'); ?>

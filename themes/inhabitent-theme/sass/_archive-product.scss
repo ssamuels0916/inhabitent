@@ -70,3 +70,62 @@ Header Styling - sub navigation
         font-size: 1.2rem;
     }
 }
+
+.archive .shop-stuff-items {
+    text-align: center;
+    padding: 0;
+    margin: 5% 0 5%;
+    a {
+        margin-right: 5px;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+}
+
+
+/* Single Product Styling */
+
+.single-product article {
+    display: flex;
+    margin: 10% 5%;
+    .entry-header {
+        img {
+            height: auto;
+            width: 90%;
+        }
+    }
+    .entry-content {
+        width: 40%;
+        margin-top: 0;
+        padding-top: 1rem;
+        font-size: 1.2rem;
+        h2 {
+            margin: 0 0 2% 0;
+        }
+    }
+    span {
+        font-weight: bold;
+    }
+    p {
+        padding-bottom: 2rem;
+    }
+}
+
+.single-product .entry-title {
+    a {
+        text-decoration: none;
+        color: $brand_color_orange;
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+.social a {
+    border: 1px solid black;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: black;
+}

@@ -590,12 +590,15 @@ a {
 
 /*Style sidebar*/
 .widget-area {
-  padding: 7% 5% 0 5%; }
+  padding: 10% 5% 0 5%; }
   .widget-area a {
     text-decoration: none;
     color: #248a83; }
     .widget-area a i {
       color: black; }
+
+.widget-title {
+  text-transform: uppercase; }
 
 span.day-of-week {
   font-weight: bold; }
@@ -613,7 +616,7 @@ span.day-of-week {
 .updated:not(.published) {
   display: none; }
 
-.single .byline,
+.single-post .byline,
 .group-blog .byline {
   display: inline; }
 
@@ -647,7 +650,7 @@ span.day-of-week {
 .blog .entry-content .entry-header img {
   width: 65%; }
 
-.single .entry-content .entry-header img {
+.single-post .entry-content .entry-header img {
   width: 65%; }
 
 .blog .site-main {
@@ -668,7 +671,7 @@ span.day-of-week {
   width: 60%;
   color: white; }
 
-.single .entry-title {
+.single-post .entry-title {
   position: relative;
   width: 60%;
   color: white; }
@@ -681,7 +684,7 @@ span.day-of-week {
   padding-right: 20px; }
 
 /*Single Post Pages*/
-.single .site-main {
+.single-post .site-main {
   margin-top: 10%; }
 
 /* Find us Page */
@@ -697,7 +700,7 @@ span.day-of-week {
   .page-template-about .about_photo h2 {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 45%;
     color: white;
     font-size: 2.25rem;
     text-transform: uppercase; }
@@ -881,23 +884,23 @@ body .hero-image {
   margin: 5% 10% 5% 10%;
   padding: 2%; }
 
-.shop-stuff-content {
+.home .shop-stuff-content {
   text-align: center;
   margin-right: 10px;
   border: 1px solid #e1e1e1;
   border-top: 3px solid #e1e1e1;
   padding: 1%; }
-  .shop-stuff-content:hover {
+  .home .shop-stuff-content:hover {
     border-color: #d99054; }
-  .shop-stuff-content img {
+  .home .shop-stuff-content img {
     height: 70px;
     width: 70px; }
-  .shop-stuff-content a {
+  .home .shop-stuff-content a {
     text-decoration: none;
     background-color: #248A83;
     padding: 15px;
     color: white; }
-  .shop-stuff-content span {
+  .home .shop-stuff-content span {
     text-transform: uppercase; }
 
 /******************* Inhabitent Journal Section *******************/
@@ -1148,6 +1151,50 @@ Header Styling - sub navigation
     text-decoration: none;
     font-size: 1.2rem; }
 
+.archive .shop-stuff-items {
+  text-align: center;
+  padding: 0;
+  margin: 5% 0 5%; }
+  .archive .shop-stuff-items a {
+    margin-right: 5px;
+    text-decoration: none;
+    font-size: 1.2rem; }
+
+/* Single Product Styling */
+.single-product article {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10% 5%; }
+  .single-product article .entry-header img {
+    height: auto;
+    width: 90%; }
+  .single-product article .entry-content {
+    width: 40%;
+    margin-top: 0;
+    padding-top: 1rem;
+    font-size: 1.2rem; }
+    .single-product article .entry-content h2 {
+      margin: 0 0 2% 0; }
+  .single-product article span {
+    font-weight: bold; }
+  .single-product article p {
+    padding-bottom: 2rem; }
+
+.single-product .entry-title a {
+  text-decoration: none;
+  color: #d99054;
+  text-transform: uppercase;
+  font-size: 2rem; }
+
+.single-product .entry-title h2 {
+  font-size: 2rem; }
+
+.social a {
+  border: 1px solid black;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: black; }
+
 /*--------------------------------------------------------------
 # Home - Journal page styling
 --------------------------------------------------------------*/
@@ -1155,7 +1202,7 @@ Header Styling - sub navigation
   display: -ms-flexbox;
   display: flex; }
 
-.single .content-area {
+.single-post .content-area {
   display: -ms-flexbox;
   display: flex; }
 
@@ -1165,10 +1212,10 @@ Header Styling - sub navigation
   .blog .entry-header img {
     width: 100%; }
 
-.single .entry-header {
+.single-post .entry-header {
   position: relative;
   margin-right: 2rem; }
-  .single .entry-header img {
+  .single-post .entry-header img {
     width: 100%; }
 
 .blog .entry-title {
@@ -1185,7 +1232,7 @@ Header Styling - sub navigation
     color: white;
     height: auto; }
 
-.single .entry-title {
+.single-post .entry-title {
   position: absolute;
   padding: .75rem 1.5rem;
   background-color: #248A83;
@@ -1194,7 +1241,7 @@ Header Styling - sub navigation
   top: 0;
   /*width: 50%;*/
   margin-top: 2.25rem; }
-  .single .entry-title a {
+  .single-post .entry-title a {
     text-decoration: none;
     color: white;
     height: auto; }
@@ -1211,7 +1258,7 @@ Header Styling - sub navigation
     text-decoration: none;
     color: white; }
 
-.single .entry-meta {
+.single-post .entry-meta {
   position: absolute;
   background-color: #248A83;
   color: white;
@@ -1219,18 +1266,19 @@ Header Styling - sub navigation
   text-transform: uppercase;
   bottom: 6px;
   right: 0; }
-  .single .entry-meta a {
+  .single-post .entry-meta a {
     text-decoration: none;
     color: white; }
 
 .blog .site-main {
   width: 75%; }
 
-.single .site-main {
-  width: 75%; }
+.single-post .site-main {
+  width: 75%;
+  margin-left: 5%; }
 
 .blog .contact-info {
   margin-top: 40%; }
 
-.single .contact-info {
+.single-post .contact-info {
   margin-top: 40%; }
