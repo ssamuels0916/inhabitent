@@ -971,6 +971,8 @@ body .hero-image {
     background-color: #248A83;
     padding: 15px;
     color: white; }
+    .home .shop-stuff-content a:hover {
+      background-color: #19625d; }
   .home .shop-stuff-content span {
     text-transform: uppercase; }
 
