@@ -18,12 +18,13 @@
                     text-transform: uppercase;
                     text-align: center;
                     font-size: 2rem;
+                    margin-top: 5%;
                 }
                 
                 .shop-section {
                     display: flex;
                     justify-content: space-around;
-                    margin: 5% 10% 5% 10%;
+                    margin: 2% 10% 5% 10%;
                     padding: 2%;
                 }
                 
@@ -211,14 +212,13 @@
                         margin-right: 20px;
                         position: relative;
                         h3 {
-                            position: absolute;
-                            line-height: 2.5rem;
-                            font-size: 2.5rem;
-                            padding: 3%;
-                            width: 100%;
-                            color: white;
+                            padding: 4%;
+                            a {
+                                @include adventure-links;
+                                padding: 0;
+                            }
                         }
-                        a {
+                        a.adventure-text {
                             text-decoration: none;
                             color: white;
                             border: 1px solid white;
@@ -242,14 +242,13 @@
                         width: 48%;
                         position: relative;
                         h3 {
-                            color: white;
-                            position: absolute;
-                            line-height: 2.5rem;
-                            font-size: 2.5rem;
-                            padding: 5%;
-                            width: 100%;
+                            padding: 4%;
+                            a {
+                                @include adventure-links;
+                                padding: 0;
+                            }
                         }
-                        a {
+                        a.adventure-text {
                             text-decoration: none;
                             color: white;
                             border: 1px solid white;

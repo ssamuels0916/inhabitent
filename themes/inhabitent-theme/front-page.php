@@ -92,12 +92,12 @@ wp_reset_postdata();
 ?>">Read More</a>
         </div>
         <div class="mountain">
-          <h3>Taking in the View at Big Mountain</h3>
+          <h3><a class="adventure-link" href="#">Taking in the View at Big Mountain</a></h3>
           <a class="adventure-text" href="<?php the_permalink();
 ?>">Read More</a>
         </div>
         <div class="stars">
-          <h3>Star-gazing at the Night Sky</h3>
+          <h3><a class="adventure-link" href="#">Star-gazing at the Night Sky</a></h3>
           <a class="adventure-text" href="<?php the_permalink();
 ?>">Read More</a>
         </div>

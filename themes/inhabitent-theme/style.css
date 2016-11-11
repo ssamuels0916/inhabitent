@@ -874,14 +874,15 @@ body .hero-image {
 .shop-stuff h2 {
   text-transform: uppercase;
   text-align: center;
-  font-size: 2rem; }
+  font-size: 2rem;
+  margin-top: 5%; }
 
 .shop-section {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 5% 10% 5% 10%;
+  margin: 2% 10% 5% 10%;
   padding: 2%; }
 
 .home .shop-stuff-content {
@@ -1056,13 +1057,19 @@ a.adventure-text {
     margin-right: 20px;
     position: relative; }
     .right-block .mountain h3 {
-      position: absolute;
-      line-height: 2.5rem;
-      font-size: 2.5rem;
-      padding: 3%;
-      width: 100%;
-      color: white; }
-    .right-block .mountain a {
+      padding: 4%; }
+      .right-block .mountain h3 a {
+        color: white;
+        position: absolute;
+        line-height: 2.5rem;
+        font-size: 2.2rem;
+        top: 20%;
+        padding: 8%;
+        text-decoration: none;
+        padding: 0; }
+        .right-block .mountain h3 a:hover {
+          color: antiquewhite; }
+    .right-block .mountain a.adventure-text {
       text-decoration: none;
       color: white;
       border: 1px solid white;
@@ -1071,7 +1078,7 @@ a.adventure-text {
       padding: 10px;
       top: 190px;
       left: 11px; }
-      .right-block .mountain a:hover {
+      .right-block .mountain a.adventure-text:hover {
         background-color: #248A83;
         border: none; }
   .right-block .stars {
@@ -1083,13 +1090,19 @@ a.adventure-text {
     width: 48%;
     position: relative; }
     .right-block .stars h3 {
-      color: white;
-      position: absolute;
-      line-height: 2.5rem;
-      font-size: 2.5rem;
-      padding: 5%;
-      width: 100%; }
-    .right-block .stars a {
+      padding: 4%; }
+      .right-block .stars h3 a {
+        color: white;
+        position: absolute;
+        line-height: 2.5rem;
+        font-size: 2.2rem;
+        top: 20%;
+        padding: 8%;
+        text-decoration: none;
+        padding: 0; }
+        .right-block .stars h3 a:hover {
+          color: antiquewhite; }
+    .right-block .stars a.adventure-text {
       text-decoration: none;
       color: white;
       border: 1px solid white;
@@ -1098,7 +1111,7 @@ a.adventure-text {
       padding: 10px;
       top: 190px;
       left: 17px; }
-      .right-block .stars a:hover {
+      .right-block .stars a.adventure-text:hover {
         background-color: #248A83;
         border: none; }
 
