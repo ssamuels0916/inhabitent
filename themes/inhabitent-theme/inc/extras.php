@@ -70,7 +70,7 @@ function my_styles_method() {
     $url = CFS()->get('about_page_photo');
     $custom_css = "
     .about_photo{
-        background-image: url( {$url});
+        background-image:linear-gradient( to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url( {$url});
     }";
     wp_add_inline_style( 'red-starter-style', $custom_css );
 }
@@ -84,10 +84,10 @@ Custom Archive Title
 function inhabitent_product_archive_title( $title ) {
     
     if(is_post_type_archive( 'product' )){
-        
         $title = 'Shop Stuff';
     }
     return $title;
+    
 }
 add_filter( 'get_the_archive_title', 'inhabitent_product_archive_title' );
 
@@ -99,8 +99,6 @@ function inhabitent_archive_title( $title ) {
         $title = single_cat_title( '', false );
     } elseif ( is_tag() ) {
         $title = single_tag_title( '', false );
-    } elseif ( is_post_type_archive() ) {
-        $title = post_type_archive_title( '', false );
     } elseif ( is_tax() ) {
         $title = single_term_title( '', false );
     }

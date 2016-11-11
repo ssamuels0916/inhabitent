@@ -297,9 +297,10 @@ h6 {
 /* Copy */
 p {
   margin-bottom: 1.5em;
-  font-family: "merriweather", sans-serif;
-  font-weight: 400;
-  font-style: normal; }
+  font-family: "merriweather", serif;
+  font-weight: 100;
+  font-style: normal;
+  color: #404040; }
 
 dfn,
 cite,
@@ -483,9 +484,9 @@ textarea {
 a {
   color: royalblue; }
   a:visited {
-    color: purple; }
+    color: black; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: black; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -756,59 +757,6 @@ span.day-of-week {
 /*Single Post Pages*/
 .single-post .site-main {
   margin-top: 10%; }
-
-/* Find us Page */
-/* About Page Image Area */
-.page-template-about .about_photo {
-  height: 100vh;
-  width: 100vw;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 5%;
-  background-position: 25% 75%;
-  position: relative; }
-  .page-template-about .about_photo h2 {
-    position: absolute;
-    top: 50%;
-    left: 45%;
-    color: white;
-    font-size: 2.25rem;
-    text-transform: uppercase; }
-
-.page-template-about .content-area {
-  margin: 0; }
-
-.page-template-about .site-main {
-  width: 100%; }
-
-.page-template-about .site-main {
-  margin-top: 0; }
-
-.page-template-about .about_copy {
-  margin: 0 10% 25% 10%; }
-  .page-template-about .about_copy h2 {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 2.25rem; }
-  .page-template-about .about_copy p {
-    font-size: 1rem; }
-
-/* Find Us Page  */
-.page-template-page-find-us .entry-title {
-  margin-top: 10%; }
-
-.page-template-page-find-us .site-content {
-  display: -ms-flexbox;
-  display: flex; }
-
-.page-template-page-find-us .site-main {
-  width: 70%; }
-
-.page-template-page-find-us .contact-info {
-  margin-top: 40%; }
-
-.page .wpcf7-form-control {
-  color: #248A83; }
 
 /*--------------------------------------------------------------
 # Media
@@ -1202,10 +1150,11 @@ a.adventure-text {
 /*--------------------------------------------------------------
 # Archive - Product
 --------------------------------------------------------------*/
-h1.page-title {
+.archive h1.page-title {
   text-align: center;
   text-transform: uppercase;
-  margin-top: 10%; }
+  margin-top: 10%;
+  font-weight: bold; }
 
 .archive .allProducts {
   display: -ms-flexbox;
@@ -1238,9 +1187,17 @@ h1.page-title {
 .archive .entry-title {
   font-size: 1rem;
   color: black;
-  margin: 0; }
+  margin: 0;
+  pointer-events: none;
+  font-family: "merriweather", serif;
+  font-weight: 400;
+  font-style: normal; }
   .archive .entry-title a {
-    text-decoration: none; }
+    text-decoration: none;
+    font-family: "merriweather", serif;
+    font-weight: 100;
+    font-size: normal;
+    color: black; }
 
 /*
 Header Styling - sub navigation
@@ -1259,7 +1216,10 @@ Header Styling - sub navigation
   .archive .shop-stuff-content a {
     margin-right: 5px;
     text-decoration: none;
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    color: #248A83; }
+    .archive .shop-stuff-content a:hover {
+      color: black; }
 
 .archive .shop-stuff-items {
   text-align: center;
@@ -1268,7 +1228,10 @@ Header Styling - sub navigation
   .archive .shop-stuff-items a {
     margin-right: 5px;
     text-decoration: none;
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    color: #248A83; }
+    .archive .shop-stuff-items a:hover {
+      color: black; }
 
 /* Single Product Styling */
 .single-product article {
@@ -1281,20 +1244,24 @@ Header Styling - sub navigation
   .single-product article .entry-content {
     width: 40%;
     margin-top: 0;
-    padding-top: 1rem;
     font-size: 1.2rem; }
     .single-product article .entry-content h2 {
       margin: 0 0 2% 0; }
   .single-product article span {
+    font-family: "merriweather", serif;
     font-weight: bold; }
   .single-product article p {
-    padding-bottom: 2rem; }
+    padding-bottom: 2rem;
+    font-size: 1rem;
+    font-weight: 100; }
 
 .single-product .entry-title a {
   text-decoration: none;
   color: #d99054;
   text-transform: uppercase;
-  font-size: 2rem; }
+  font-size: 2rem;
+  font-weight: 600;
+  font-weight: bold; }
 
 .single-product .entry-title h2 {
   font-size: 2rem; }
@@ -1392,3 +1359,71 @@ Header Styling - sub navigation
 
 .single-post .contact-info {
   margin-top: 40%; }
+
+/*--------------------------------------------------------------
+# Find-Us Page
+--------------------------------------------------------------*/
+/* Find Us Page  */
+.page-id-29 .entry-title {
+  margin-top: 10%; }
+
+.page-id-29 .site-content {
+  display: -ms-flexbox;
+  display: flex; }
+
+/*.page-id-29 .content-area {
+    padding-right: 5%;
+    width: 65%;
+    margin-left: 5%;
+    border-right: 1px solid $color_light-grey-brand-colour;
+}
+
+.page-id-29 .contact-info {
+    margin-top: 30%;
+}*/
+/*.page-id-29 .widget-area {
+    width: 30%
+}*/
+/*.page-id-29 .wpcf7-form-control {
+    color: $color_green-brand-colour;
+}*/
+/*--------------------------------------------------------------
+# About Us
+--------------------------------------------------------------*/
+/* About Page Image Area */
+.page-template-about .about_photo {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 5%;
+  background-position: 25% 75%;
+  position: relative; }
+  .page-template-about .about_photo h2 {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    color: white;
+    font-size: 2.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+
+.page-template-about .content-area {
+  margin: 0; }
+
+.page-template-about .site-main {
+  width: 100%; }
+
+.page-template-about .site-main {
+  margin-top: 0; }
+
+.page-template-about .about_copy {
+  margin: 0 10% 25% 10%; }
+  .page-template-about .about_copy h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.25rem;
+    font-weight: 600; }
+  .page-template-about .about_copy p {
+    font-size: 1rem; }
