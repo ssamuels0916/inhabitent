@@ -972,6 +972,8 @@ body .hero-image {
       text-decoration: none;
       color: white;
       text-transform: uppercase; }
+    .adventure-block span:hover {
+      background-color: #19625d; }
 
 .left-block {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/adventure-photos/canoe-girl.jpg");
@@ -982,23 +984,28 @@ body .hero-image {
   background-position-x: 50%;
   margin-right: 15px;
   position: relative; }
-  .left-block h3 {
+  .left-block h3 a {
     color: white;
     position: absolute;
     line-height: 2.5rem;
-    font-size: 2.5rem;
-    padding: 25% 13%; }
-  .left-block a {
-    text-decoration: none;
-    color: white;
-    padding: 10px;
-    border: 1px solid white;
-    position: absolute;
-    top: 260px;
-    left: 64px; }
-    .left-block a:hover {
-      background-color: #248A83;
-      border: none; }
+    font-size: 2.2rem;
+    top: 20%;
+    padding: 8%;
+    text-decoration: none; }
+    .left-block h3 a:hover {
+      color: antiquewhite; }
+
+a.adventure-text {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border: 1px solid white;
+  position: absolute;
+  top: 260px;
+  left: 64px; }
+  a.adventure-text:hover {
+    background-color: #248A83;
+    border: none; }
 
 .right-block {
   display: -ms-flexbox;
@@ -1016,13 +1023,19 @@ body .hero-image {
     width: 100%;
     margin-bottom: 20px; }
     .right-block .beach h3 {
-      position: absolute;
-      line-height: 2.5rem;
-      font-size: 2.5rem;
-      padding: 8% 5%;
-      width: 100%;
-      color: white; }
-    .right-block .beach a {
+      padding: 4%; }
+      .right-block .beach h3 a {
+        color: white;
+        position: absolute;
+        line-height: 2.5rem;
+        font-size: 2.2rem;
+        top: 20%;
+        padding: 8%;
+        text-decoration: none;
+        padding: 4%; }
+        .right-block .beach h3 a:hover {
+          color: antiquewhite; }
+    .right-block .beach a.adventure-text {
       text-decoration: none;
       color: white;
       padding: 10px;
@@ -1030,7 +1043,7 @@ body .hero-image {
       position: absolute;
       top: 180px;
       left: 33px; }
-      .right-block .beach a:hover {
+      .right-block .beach a.adventure-text:hover {
         background-color: #248A83;
         border: none; }
   .right-block .mountain {

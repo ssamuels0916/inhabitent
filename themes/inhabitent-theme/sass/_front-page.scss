@@ -1,272 +1,267 @@
-/*--------------------------------------------------------------
+                /*--------------------------------------------------------------
 # Front-page
 --------------------------------------------------------------*/
-
-body .hero-image {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../images/home-hero.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-}
-
-
-/******************* Shopping  Section *******************/
-
-.shop-stuff h2 {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 2rem;
-}
-
-.shop-section {
-    display: flex;
-    justify-content: space-around;
-    margin: 5% 10% 5% 10%;
-    padding: 2%;
-}
-
-.home .shop-stuff-content {
-    text-align: center;
-    margin-right: 10px;
-    border: 1px solid $color_light-grey-brand-colour;
-    border-top: 3px solid $color_light-grey-brand-colour;
-    padding: 1%;
-    &:hover {
-        border-color: $brand_color_orange;
-    }
-    img {
-        height: 70px;
-        width: 70px;
-    }
-    a {
-        text-decoration: none;
-        background-color: $color_green-brand-colour;
-        padding: 15px;
-        color: white;
-    }
-    span {
-        text-transform: uppercase;
-    }
-}
-
-
-/******************* Inhabitent Journal Section *******************/
-
-.inhabitent-journal h2 {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 2rem;
-}
-
-.home .get-posts {
-    display: flex;
-    margin: 0 5%;
-}
-
-.home .post-content {
-    margin: 15px;
-    width: 365.5px;
-    line-height: 1.2rem;
-    border: 1px solid $color_light-grey-brand-colour;
-    h3 a {
-        text-decoration: none;
-        color: black;
-        &:hover {
-            color: $color_green-brand-colour;
-        }
-    }
-    img {
-        max-height: 250px;
-        border-bottom: 5px solid $color_light-grey-brand-colour;
-    }
-    a.read {
-        text-decoration: none;
-        border: 1px solid black;
-        padding: 10px;
-        color: black;
-        text-transform: uppercase;
-        &:hover {
-            background-color: $color_green-brand-colour;
-            border: none;
-            color: white;
-        }
-    }
-}
-
-.journal-info {
-    margin: 2rem;
-    p {
-        margin: 0;
-    }
-    h3 {
-        margin-bottom: 35px;
-    }
-}
-
-
-/******************* Adventure  Section *******************/
-
-.adventure h2 {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 2rem;
-}
-
-.adventure-text {
-    text-transform: uppercase;
-}
-
-.adventure-block {
-    display: flex;
-    flex-flow: row wrap;
-    align-content: space-between;
-    // width: 100vw;
-    height: 600px;
-    margin: 40px 40px 140px 40px;
-    span {
-        margin-top: 3%;
-        padding: 20px;
-        background-color: $color_green-brand-colour;
-        border: none;
-        a {
-            text-decoration: none;
-            color: white;
-            text-transform: uppercase;
-        }
-    }
-}
-
-.left-block {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../images/adventure-photos/canoe-girl.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 99%;
-    width: 40%;
-    background-position-x: 50%;
-    margin-right: 15px;
-    position: relative;
-    h3 {
-        color: white;
-        position: absolute;
-        line-height: 2.5rem;
-        font-size: 2.5rem;
-        padding: 25% 13%;
-    }
-    a {
-        text-decoration: none;
-        color: white;
-        padding: 10px;
-        border: 1px solid white;
-        position: absolute;
-        top: 260px;
-        left: 64px;
-        &:hover {
-            background-color: $color_green-brand-colour;
-            border: none;
-        }
-    }
-}
-
-.right-block {
-    display: flex;
-    flex-flow: row wrap;
-    width: 600px;
-    .beach {
-        background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../images/adventure-photos/beach-bonfire.jpg');
-        background-repeat: no-repeat;
-        background-position: 50%;
-        background-size: cover;
-        position: relative;
-        height: 47%;
-        width: 100%;
-        margin-bottom: 20px;
-        h3 {
-            position: absolute;
-            line-height: 2.5rem;
-            font-size: 2.5rem;
-            padding: 8% 5%;
-            width: 100%;
-            color: white;
-        }
-        a {
-            text-decoration: none;
-            color: white;
-            padding: 10px;
-            border: 1px solid white;
-            position: absolute;
-            top: 180px;
-            left: 33px;
-            &:hover {
-                background-color: $color_green-brand-colour;
-                border: none;
-            }
-        }
-    }
-    .mountain {
-        background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../images/adventure-photos/mountain-hikers.jpg');
-        background-repeat: no-repeat;
-        background-position: 51%;
-        background-size: cover;
-        height: 48%;
-        width: 48%;
-        margin-right: 20px;
-        position: relative;
-        h3 {
-            position: absolute;
-            line-height: 2.5rem;
-            font-size: 2.5rem;
-            padding: 3%;
-            width: 100%;
-            color: white;
-        }
-        a {
-            text-decoration: none;
-            color: white;
-            border: 1px solid white;
-            position: absolute;
-            margin: 0 0;
-            padding: 10px;
-            top: 190px;
-            left: 11px;
-            &:hover {
-                background-color: $color_green-brand-colour;
-                border: none;
-            }
-        }
-    }
-    .stars {
-        background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../images/adventure-photos/night-sky.jpg');
-        background-repeat: no-repeat;
-        background-position: 55%;
-        background-size: cover;
-        height: 48%;
-        width: 48%;
-        position: relative;
-        h3 {
-            color: white;
-            position: absolute;
-            line-height: 2.5rem;
-            font-size: 2.5rem;
-            padding: 5%;
-            width: 100%;
-        }
-        a {
-            text-decoration: none;
-            color: white;
-            border: 1px solid white;
-            position: absolute;
-            margin: 0 0;
-            padding: 10px;
-            top: 190px;
-            left: 17px;
-            &:hover {
-                background-color: $color_green-brand-colour;
-                border: none;
-            }
-        }
-    }
-}
+                
+                body .hero-image {
+                    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../images/home-hero.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 100vh;
+                    width: 100vw;
+                    display: flex;
+                    justify-content: center;
+                    margin: 0;
+                }
+                /******************* Shopping  Section *******************/
+                
+                .shop-stuff h2 {
+                    text-transform: uppercase;
+                    text-align: center;
+                    font-size: 2rem;
+                }
+                
+                .shop-section {
+                    display: flex;
+                    justify-content: space-around;
+                    margin: 5% 10% 5% 10%;
+                    padding: 2%;
+                }
+                
+                .home .shop-stuff-content {
+                    text-align: center;
+                    margin-right: 10px;
+                    border: 1px solid $color_light-grey-brand-colour;
+                    border-top: 3px solid $color_light-grey-brand-colour;
+                    padding: 1%;
+                    &:hover {
+                        border-color: $brand_color_orange;
+                    }
+                    img {
+                        height: 70px;
+                        width: 70px;
+                    }
+                    a {
+                        text-decoration: none;
+                        background-color: $color_green-brand-colour;
+                        padding: 15px;
+                        color: white;
+                    }
+                    span {
+                        text-transform: uppercase;
+                    }
+                }
+                /******************* Inhabitent Journal Section *******************/
+                
+                .inhabitent-journal h2 {
+                    text-transform: uppercase;
+                    text-align: center;
+                    font-size: 2rem;
+                }
+                
+                .home .get-posts {
+                    display: flex;
+                    margin: 0 5%;
+                }
+                
+                .home .post-content {
+                    margin: 15px;
+                    width: 365.5px;
+                    line-height: 1.2rem;
+                    border: 1px solid $color_light-grey-brand-colour;
+                    h3 a {
+                        text-decoration: none;
+                        color: black;
+                        &:hover {
+                            color: $color_green-brand-colour;
+                        }
+                    }
+                    img {
+                        max-height: 250px;
+                        border-bottom: 5px solid $color_light-grey-brand-colour;
+                    }
+                    a.read {
+                        text-decoration: none;
+                        border: 1px solid black;
+                        padding: 10px;
+                        color: black;
+                        text-transform: uppercase;
+                        &:hover {
+                            background-color: $color_green-brand-colour;
+                            border: none;
+                            color: white;
+                        }
+                    }
+                }
+                
+                .journal-info {
+                    margin: 2rem;
+                    p {
+                        margin: 0;
+                    }
+                    h3 {
+                        margin-bottom: 35px;
+                    }
+                }
+                /******************* Adventure  Section *******************/
+                
+                .adventure h2 {
+                    text-transform: uppercase;
+                    text-align: center;
+                    font-size: 2rem;
+                }
+                
+                .adventure-text {
+                    text-transform: uppercase;
+                }
+                
+                .adventure-block {
+                    display: flex;
+                    flex-flow: row wrap;
+                    align-content: space-between;
+                    // width: 100vw;
+                    height: 600px;
+                    margin: 40px 40px 140px 40px;
+                    span {
+                        margin-top: 3%;
+                        padding: 20px;
+                        background-color: $color_green-brand-colour;
+                        border: none;
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            text-transform: uppercase;
+                        }
+                        &:hover {
+                            background-color: darken($color_green-brand-colour, 10%);
+                        }
+                    }
+                }
+                
+                .left-block {
+                    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../images/adventure-photos/canoe-girl.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 99%;
+                    width: 40%;
+                    background-position-x: 50%;
+                    margin-right: 15px;
+                    position: relative;
+                    h3 {
+                        a {
+                            @include adventure-links;
+                        }
+                    }
+                }
+                
+                a.adventure-text {
+                    text-decoration: none;
+                    color: white;
+                    padding: 10px;
+                    border: 1px solid white;
+                    position: absolute;
+                    top: 260px;
+                    left: 64px;
+                    &:hover {
+                        background-color: $color_green-brand-colour;
+                        border: none;
+                    }
+                }
+                
+                .right-block {
+                    display: flex;
+                    flex-flow: row wrap;
+                    width: 600px;
+                    .beach {
+                        background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../images/adventure-photos/beach-bonfire.jpg');
+                        background-repeat: no-repeat;
+                        background-position: 50%;
+                        background-size: cover;
+                        position: relative;
+                        height: 47%;
+                        width: 100%;
+                        margin-bottom: 20px;
+                        h3 {
+                            padding: 4%;
+                            a {
+                                @include adventure-links;
+                                padding: 4%;
+                            }
+                        }
+                        a.adventure-text {
+                            text-decoration: none;
+                            color: white;
+                            padding: 10px;
+                            border: 1px solid white;
+                            position: absolute;
+                            top: 180px;
+                            left: 33px;
+                            &:hover {
+                                background-color: $color_green-brand-colour;
+                                border: none;
+                            }
+                        }
+                    }
+                    .mountain {
+                        background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../images/adventure-photos/mountain-hikers.jpg');
+                        background-repeat: no-repeat;
+                        background-position: 51%;
+                        background-size: cover;
+                        height: 48%;
+                        width: 48%;
+                        margin-right: 20px;
+                        position: relative;
+                        h3 {
+                            position: absolute;
+                            line-height: 2.5rem;
+                            font-size: 2.5rem;
+                            padding: 3%;
+                            width: 100%;
+                            color: white;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            border: 1px solid white;
+                            position: absolute;
+                            margin: 0 0;
+                            padding: 10px;
+                            top: 190px;
+                            left: 11px;
+                            &:hover {
+                                background-color: $color_green-brand-colour;
+                                border: none;
+                            }
+                        }
+                    }
+                    .stars {
+                        background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../images/adventure-photos/night-sky.jpg');
+                        background-repeat: no-repeat;
+                        background-position: 55%;
+                        background-size: cover;
+                        height: 48%;
+                        width: 48%;
+                        position: relative;
+                        h3 {
+                            color: white;
+                            position: absolute;
+                            line-height: 2.5rem;
+                            font-size: 2.5rem;
+                            padding: 5%;
+                            width: 100%;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            border: 1px solid white;
+                            position: absolute;
+                            margin: 0 0;
+                            padding: 10px;
+                            top: 190px;
+                            left: 17px;
+                            &:hover {
+                                background-color: $color_green-brand-colour;
+                                border: none;
+                            }
+                        }
+                    }
+                }

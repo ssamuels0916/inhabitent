@@ -80,13 +80,14 @@ wp_reset_postdata();
     <h2>Latest Adventures</h2>
     <div class="adventure-block">
       <div class="left-block">
-        <h3>Getting Back to Nature in a Canoe</h3>
+        <h3><a class="adventure-link" href="#">Getting Back to Nature in a Canoe</a></h3>
         <a class="adventure-text" href="<?php the_permalink();
 ?>">Read More</a>
       </div>
       <div class="right-block">
         <div class="beach">
-          <h3>A Night with Friends at the Beach</h3>
+          <h3><a class="adventure-link" href="#">A Night with Friends at the Beach</a></h3>
+
           <a class="adventure-text" href="<?php the_permalink();
 ?>">Read More</a>
         </div>
