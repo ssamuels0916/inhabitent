@@ -58,6 +58,8 @@
 
 .comments-area h3 {
     text-transform: uppercase;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
 }
 
 //main content area - Journal Page
@@ -103,8 +105,20 @@
     font-size: 2rem;
 }
 
-.cat-links {
+.cat-links,
+.tags-links {
     padding-right: 20px;
+    font-family: $font_headers;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1rem;
+    a {
+        text-decoration: none;
+        color: $color_green-brand-colour;
+        &:hover {
+            color: black;
+        }
+    }
 }
 
 

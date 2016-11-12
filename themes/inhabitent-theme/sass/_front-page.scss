@@ -46,9 +46,6 @@
                         background-color: $color_green-brand-colour;
                         padding: 15px;
                         color: white;
-                        &:hover {
-                            background-color: darken($color_green-brand-colour, 10%);
-                        }
                     }
                     span {
                         text-transform: uppercase;

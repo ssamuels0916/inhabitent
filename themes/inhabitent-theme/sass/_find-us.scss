@@ -15,3 +15,43 @@
     margin-left: 5%;
     padding-right: 5%;
 }
+
+.page-id-29 .site-main {
+    padding-top: 10%;
+}
+
+.page-id-29 .entry-title {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.page-id-29 .entry-content {
+    h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: $color__text-main;
+        text-transform: uppercase;
+    }
+}
+
+
+/*
+* Comment fields
+*/
+
+label {
+    font-size: 1.1rem;
+    font-family: $font_headers;
+    font-weight: normal;
+    color: $color__text-main;
+    span {
+        color: $brand_color_orange;
+    }
+}
+
+.comments-area h3 {
+    font-weight: bold;
+    font-size: 2rem;
+    color: $color_comment-titles;
+}
