@@ -84,6 +84,11 @@
         border: 1px solid black;
         color: black;
         text-transform: uppercase;
+        &:hover {
+            background-color: $color_green-brand-colour;
+            color: white;
+            border: none;
+        }
     }
 }
 

@@ -48,3 +48,8 @@ ol.comment-list {
         }
     }
 }
+
+.comment-content a {
+    text-decoration: none;
+    color: $color_green-brand-colour;
+}

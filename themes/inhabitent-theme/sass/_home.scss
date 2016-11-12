@@ -42,6 +42,10 @@
         height: auto;
         font-family: $font_headers;
         font-weight: 600;
+        letter-spacing: 2px;
+        &:hover {
+            color: $color_link-hover-2;
+        }
     }
 }
 
@@ -70,7 +74,7 @@
     color: white;
     padding: .75rem 1rem;
     text-transform: uppercase;
-    bottom: 6px;
+    bottom: 9px;
     right: 0;
     a {
         text-decoration: none;
@@ -107,4 +111,8 @@
 
 .single-post .contact-info {
     margin-top: 40%;
+}
+
+.entry-content p.BodyA {
+    line-height: 1.75;
 }

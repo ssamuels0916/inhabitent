@@ -788,6 +788,10 @@ span.day-of-week {
     border: 1px solid black;
     color: black;
     text-transform: uppercase; }
+    #read-more a:hover {
+      background-color: #248A83;
+      color: white;
+      border: none; }
 
 .blog .entry-title {
   position: relative;
@@ -1380,7 +1384,10 @@ Header Styling - sub navigation
     color: white;
     height: auto;
     font-family: "Novecento", sans-serif;
-    font-weight: 600; }
+    font-weight: 600;
+    letter-spacing: 2px; }
+    .blog .entry-title a:hover {
+      color: antiquewhite; }
 
 .single-post .entry-title {
   position: absolute;
@@ -1405,7 +1412,7 @@ Header Styling - sub navigation
   color: white;
   padding: .75rem 1rem;
   text-transform: uppercase;
-  bottom: 6px;
+  bottom: 9px;
   right: 0; }
   .blog .entry-meta a {
     text-decoration: none;
@@ -1435,6 +1442,9 @@ Header Styling - sub navigation
 
 .single-post .contact-info {
   margin-top: 40%; }
+
+.entry-content p.BodyA {
+  line-height: 1.75; }
 
 /*--------------------------------------------------------------
 # Find-Us Page
@@ -1626,3 +1636,7 @@ ol.comment-list {
       width: 100%; }
   .comment-respond #commentform p.form-submit {
     width: 100%; }
+
+.comment-content a {
+  text-decoration: none;
+  color: #248A83; }
