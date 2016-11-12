@@ -9,6 +9,9 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
     background-color: $color_green-brand-colour;
+    font-family: $font_headers;
+    font-weight: 300;
+    font-style: normal;
     color: white;
     border: none;
     padding: 10px 20px;

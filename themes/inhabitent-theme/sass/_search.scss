@@ -60,3 +60,27 @@ button {
         box-shadow: none;
     }
 }
+
+
+/*
+* Search Results Page 
+*/
+
+.search-results .site-content {
+    display: flex;
+}
+
+.search-results .content-area {
+    width: 60%;
+    margin-left: 5%;
+    border-right: 1px solid $color_light-grey-brand-colour;
+}
+
+.search-results .site-main {
+    margin-top: 10%;
+    padding-right: 5%;
+}
+
+.search-results h1.page-title {
+    font-weight: 600;
+}

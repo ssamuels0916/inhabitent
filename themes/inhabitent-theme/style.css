@@ -249,16 +249,16 @@ th {
 
 @font-face {
   font-family: 'Novecento';
-  src: url("../fonts/novecentosanswide-demibold-webfont.eot");
-  src: url("../fonts/novecentosanswide-demibold-webfont.eot.eot?#iefix") format("embedded-opentype"), url("../fonts/novecentosanswide-demibold-webfont.eot.woff2") format("woff2"), url("../fonts/novecentosanswide-demibold-webfont.eot.woff") format("woff"), url("../fonts/novecentosanswide-demibold-webfont.eot.ttf") format("truetype"), url("../fonts/novecentosanswide-demibold-webfont.eot.svg#novecentosanswide-demibold") format("svg");
-  font-weight: bold;
+  src: url("../fonts/Novecentosanswide-Normal-webfont.eot");
+  src: url("../fonts/Novecentosanswide-Normal-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Novecentosanswide-Normal-webfont.woff2") format("woff2"), url("../fonts/Novecentosanswide-Normal-webfont.woff") format("woff"), url("../fonts/Novecentosanswide-Normal-webfont.ttf") format("truetype"), url("../fonts/Novecentosanswide-Normal-webfont.svg#novecento_sans_widenormal") format("svg");
+  font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Novecento';
-  src: url("../fonts/novecentosanswide-normal-webfont.eot");
-  src: url("../fonts/novecentosanswide-normal-webfont.eot.eot?#iefix") format("embedded-opentype"), url("../fonts/novecentosanswide-normal-webfont.eot.woff2") format("woff2"), url("../fonts/novecentosanswide-normal-webfont.eot.woff") format("woff"), url("../fonts/novecentosanswide-normal-webfont.ttf") format("truetype"), url("../fonts/novecentosanswide-normal-webfont.eot.svg#novecentosanswide-normal") format("svg");
-  font-weight: normal;
+  src: url("../fonts/Novecentosanswide-Bold-webfont.eot");
+  src: url("../fonts/Novecentosanswide-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Novecentosanswide-Bold-webfont.woff2") format("woff2"), url("../fonts/Novecentosanswide-Bold-webfont.woff") format("woff"), url("../fonts/Novecentosanswide-Bold-webfont.ttf") format("truetype"), url("../fonts/Novecentosanswide-Bold-webfont.svg#novecento_sans_wide_bookbold") format("svg");
+  font-weight: bold;
   font-style: normal; }
 
 /*--------------------------------------------------------------
@@ -414,6 +414,9 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   background-color: #248A83;
+  font-family: "Novecento", sans-serif;
+  font-weight: 300;
+  font-style: normal;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -1320,18 +1323,20 @@ Header Styling - sub navigation
   text-decoration: none;
   color: #d99054;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-family: "Novecento", sans-serif;
+  font-size: 2.4rem;
   font-weight: 600;
   font-weight: bold; }
-
-.single-product .entry-title h2 {
-  font-size: 2rem; }
 
 .social a {
   border: 1px solid black;
   padding: 10px 30px;
   text-decoration: none;
   color: black; }
+  .social a:hover {
+    background-color: #248A83;
+    border: none;
+    color: white; }
 
 /*--------------------------------------------------------------
 # Home - Journal page styling
@@ -1368,18 +1373,22 @@ Header Styling - sub navigation
   .blog .entry-title a {
     text-decoration: none;
     color: white;
-    height: auto; }
+    height: auto;
+    font-family: "Novecento", sans-serif;
+    font-weight: 600; }
 
 .single-post .entry-title {
   position: absolute;
-  padding: .75rem 1.5rem;
+  padding: .5rem 1.5rem;
+  line-height: 1.2;
+  letter-spacing: 2px;
   background-color: #248A83;
   /*max-width: 70%;*/
   left: 0;
   top: 0;
   /*width: 50%;*/
   margin-top: 2.25rem;
-  font-weight: bold; }
+  font-weight: 600; }
   .single-post .entry-title a {
     text-decoration: none;
     color: white;
@@ -1403,7 +1412,7 @@ Header Styling - sub navigation
   color: white;
   padding: .75rem 1rem;
   text-transform: uppercase;
-  bottom: 6px;
+  bottom: 9px;
   right: 0; }
   .single-post .entry-meta a {
     text-decoration: none;
@@ -1506,3 +1515,72 @@ label {
     font-weight: 600; }
   .page-template-about .about_copy p {
     font-size: 1rem; }
+
+/*--------------------------------------------------------------
+# Search Field
+--------------------------------------------------------------*/
+.search-form {
+  right: 20px;
+  top: 1px; }
+
+.search-field {
+  background-color: transparent;
+  background-position: 5px center;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  border: none;
+  cursor: pointer;
+  height: 37px;
+  margin: 3px 0;
+  padding: 0 0 0 34px;
+  position: relative;
+  transition: width 400ms ease, background 400ms ease;
+  width: 0;
+  color: black; }
+
+.search-field:focus {
+  cursor: text;
+  outline: 0;
+  width: 230px; }
+
+.search-form input[type="search"] {
+  -webkit-appearance: textfield;
+  padding-left: 32px;
+  color: none;
+  background-color: none; }
+
+fieldset {
+  border: none; }
+
+.search-submit {
+  background-color: transparent; }
+
+button {
+  border: none;
+  color: #248A83; }
+  button:hover {
+    border-color: none;
+    box-shadow: none;
+    background-color: none; }
+  button:active, button:focus {
+    border-color: none;
+    box-shadow: none; }
+
+/*
+* Search Results Page 
+*/
+.search-results .site-content {
+  display: -ms-flexbox;
+  display: flex; }
+
+.search-results .content-area {
+  width: 60%;
+  margin-left: 5%;
+  border-right: 1px solid #e1e1e1; }
+
+.search-results .site-main {
+  margin-top: 10%;
+  padding-right: 5%; }
+
+.search-results h1.page-title {
+  font-weight: 600; }

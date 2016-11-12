@@ -135,12 +135,10 @@ Header Styling - sub navigation
         text-decoration: none;
         color: $brand_color_orange;
         text-transform: uppercase;
-        font-size: 2rem;
+        font-family: $font_headers;
+        font-size: 2.4rem;
         font-weight: 600;
         font-weight: bold;
-    }
-    h2 {
-        font-size: 2rem;
     }
 }
 
@@ -149,4 +147,9 @@ Header Styling - sub navigation
     padding: 10px 30px;
     text-decoration: none;
     color: black;
+    &:hover {
+        background-color: $color_green-brand-colour;
+        border: none;
+        color: white;
+    }
 }
