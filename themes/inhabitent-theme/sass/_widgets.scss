@@ -28,6 +28,7 @@
 .widget-area {
     padding: 10% 5% 0 5%;
     a {
+        font-family: $font_base;
         text-decoration: none;
         color: #248a83;
         i {
@@ -39,8 +40,16 @@
 .widget-title {
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 1.4rem;
 }
 
 span.day-of-week {
     font-weight: bold;
+}
+
+.textwidget {
+    line-height: 1.85;
+    p {
+        font-size: 1.2rem;
+    }
 }

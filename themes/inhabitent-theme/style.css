@@ -410,7 +410,6 @@ table {
 # Forms
 --------------------------------------------------------------*/
 /* Buttons */
-button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -422,16 +421,13 @@ input[type="submit"] {
   border-radius: 0;
   font-size: 12px;
   font-size: 0.75rem; }
-  button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
     border-color: none;
     box-shadow: none;
     background-color: #19625d; }
-  button:active, button:focus,
-  input[type="button"]:active,
-  input[type="button"]:focus,
+  input[type="button"]:active, input[type="button"]:focus,
   input[type="reset"]:active,
   input[type="reset"]:focus,
   input[type="submit"]:active,
@@ -444,7 +440,6 @@ input[type="text"],
 input[type="email"],
 input[type="url"],
 input[type="password"],
-input[type="search"],
 textarea {
   color: #666;
   border: 1px solid #ccc;
@@ -454,7 +449,6 @@ textarea {
   input[type="email"]:focus,
   input[type="url"]:focus,
   input[type="password"]:focus,
-  input[type="search"]:focus,
   textarea:focus {
     color: #111; }
 
@@ -485,21 +479,28 @@ a {
     outline: 0; }
 
 /* Menus */
-.main-navigation {
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+.container {
   display: -ms-flexbox;
   display: flex;
-  float: left;
   width: 100%;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   position: fixed;
   z-index: 2;
   height: 55px;
-  top: 0;
-  padding-top: 10px;
+  padding-top: 5px;
   background-color: white;
   border-bottom: 1px solid #e1e1e1;
-  background-color: rgba(255, 255, 255, 0.6); }
+  background-color: rgba(255, 255, 255, 0.6);
+  top: 0; }
+
+.logo {
+  height: 40px;
+  margin-left: 30px; }
+
+.main-navigation {
+  display: -ms-flexbox;
+  display: flex; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -519,30 +520,22 @@ a {
       .main-navigation ul ul li.focus > ul {
         left: 100%; }
       .main-navigation ul ul a {
-        width: 200px;
-        padding-top: 5px; }
+        width: 200px; }
     .main-navigation ul li:hover > ul,
     .main-navigation ul li.focus > ul {
       left: auto; }
   .main-navigation li {
-    float: left;
-    position: relative;
-    padding: 10px; }
+    display: inline-block;
+    margin-right: 1.2rem; }
   .main-navigation a {
     display: block;
     text-decoration: none;
     font-weight: 400;
     color: #248A83;
     text-transform: uppercase; }
-  .main-navigation img {
-    height: 35px;
-    margin-left: 60px; }
-
-.menu-menu-1-container {
-  margin-right: 100px; }
 
 /** logged in **/
-.admin-bar .main-navigation {
+.admin-bar .container {
   top: 32px; }
 
 /* Small menu. */
@@ -577,6 +570,59 @@ a {
 
 .nav-links {
   display: none; }
+
+.menu-menu-1-container {
+  padding-top: 14px; }
+
+/*--------------------------------------------------------------
+# Search Field
+--------------------------------------------------------------*/
+.search-form {
+  right: 20px;
+  top: 1px; }
+
+.search-field {
+  background-color: transparent;
+  font-family: "Novecento", sans-serif;
+  font-size: 1rem;
+  background-position: 5px center;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  border: none;
+  cursor: pointer;
+  height: 37px;
+  position: relative;
+  transition: width 400ms ease, background 400ms ease;
+  width: 0;
+  color: black; }
+
+.search-field:focus {
+  cursor: text;
+  outline: 0;
+  width: 230px; }
+
+.search-form input[type="search"] {
+  -webkit-appearance: textfield;
+  padding-left: 32px;
+  color: none;
+  background-color: none; }
+
+fieldset {
+  border: none; }
+
+.search-submit {
+  background-color: transparent; }
+
+button {
+  border: none;
+  color: #248A83; }
+  button:hover {
+    border-color: none;
+    box-shadow: none;
+    background-color: none; }
+  button:active, button:focus {
+    border-color: none;
+    box-shadow: none; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -656,6 +702,7 @@ a {
 .widget-area {
   padding: 10% 5% 0 5%; }
   .widget-area a {
+    font-family: "merriweather", serif;
     text-decoration: none;
     color: #248a83; }
     .widget-area a i {
@@ -663,10 +710,16 @@ a {
 
 .widget-title {
   text-transform: uppercase;
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 1.4rem; }
 
 span.day-of-week {
   font-weight: bold; }
+
+.textwidget {
+  line-height: 1.85; }
+  .textwidget p {
+    font-size: 1.2rem; }
 
 /*--------------------------------------------------------------
 # Content 
@@ -927,6 +980,8 @@ body .hero-image {
     background-color: #248A83;
     padding: 15px;
     color: white; }
+    .home .shop-stuff-content a:hover {
+      background-color: #19625d; }
   .home .shop-stuff-content span {
     text-transform: uppercase; }
 
@@ -1451,38 +1506,3 @@ label {
     font-weight: 600; }
   .page-template-about .about_copy p {
     font-size: 1rem; }
-
-/*--------------------------------------------------------------
-# Search Field
---------------------------------------------------------------*/
-.search-form {
-  position: absolute;
-  right: 20px;
-  top: 1px; }
-
-.search-field {
-  background-color: transparent;
-  background-image: url(http://api.ning.com:80/files/dr2jDpSXWFhyuoGJ4YR5Fu-PwuqLz70YxRaUcpdKNxf2HI5ECzddyx3NHuPz-MB4ujGS4rEtdtS-aQoFlQrtv*XwVOu*AvC8/searchicon.png);
-  background-position: 5px center;
-  background-repeat: no-repeat;
-  background-size: 24px 24px;
-  border: none;
-  cursor: pointer;
-  height: 37px;
-  margin: 3px 0;
-  padding: 0 0 0 34px;
-  position: relative;
-  transition: width 400ms ease, background 400ms ease;
-  width: 0; }
-
-.search-field:focus {
-  background-color: #fff;
-  cursor: text;
-  outline: 0;
-  width: 230px; }
-
-.search-submit {
-  display: none; }
-
-input[type="search"] {
-  -webkit-appearance: textfield; }

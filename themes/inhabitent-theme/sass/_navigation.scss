@@ -27,20 +27,27 @@ a {
 
 /* Menus */
 
-.main-navigation {
-    justify-content: space-between;
+.container {
     display: flex;
-    float: left;
     width: 100%;
+    justify-content: space-between;
     position: fixed;
     z-index: 2;
     height: 55px;
-    //top: 32px; with login 
-    top: 0; //w/o login 
-    padding-top: 10px;
+    padding-top: 5px;
     background-color: white;
     border-bottom: 1px solid $color_light-grey-brand-colour;
     background-color: rgba(255, 255, 255, 0.6);
+    top: 0;
+}
+
+.logo {
+    height: 40px;
+    margin-left: 30px;
+}
+
+.main-navigation {
+    display: flex;
     ul {
         display: none;
         list-style: none;
@@ -65,7 +72,6 @@ a {
             }
             a {
                 width: 200px;
-                padding-top: 5px;
             }
              :hover>a,
             .focus>a {}
@@ -78,9 +84,8 @@ a {
         }
     }
     li {
-        float: left;
-        position: relative;
-        padding: 10px;
+        display: inline-block;
+        margin-right: 1.2rem;
         &:hover>a,
         &.focus>a {}
     }
@@ -91,23 +96,15 @@ a {
         color: $color_green-brand-colour;
         text-transform: uppercase;
     }
-    img {
-        height: 35px;
-        margin-left: 60px;
-    }
     .current_page_item>a,
     .current-menu-item>a,
     .current_page_ancestor>a {}
 }
 
-.menu-menu-1-container {
-    margin-right: 100px;
-}
-
 
 /** logged in **/
 
-.admin-bar .main-navigation {
+.admin-bar .container {
     top: 32px;
 }
 
@@ -148,4 +145,71 @@ a {
 
 .nav-links {
     display: none;
+}
+
+.menu-menu-1-container {
+    padding-top: 14px;
+}
+
+
+/*--------------------------------------------------------------
+# Search Field
+--------------------------------------------------------------*/
+
+.search-form {
+    right: 20px;
+    top: 1px;
+}
+
+.search-field {
+    background-color: transparent;
+    font-family: $font_headers;
+    font-size: 1rem;
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    border: none;
+    cursor: pointer;
+    height: 37px;
+    position: relative;
+    -webkit-transition: width 400ms ease, background 400ms ease;
+    transition: width 400ms ease, background 400ms ease;
+    width: 0;
+    color: black;
+}
+
+.search-field:focus {
+    cursor: text;
+    outline: 0;
+    width: 230px;
+}
+
+.search-form input[type="search"] {
+    -webkit-appearance: textfield;
+    padding-left: 32px;
+    color: none;
+    background-color: none;
+}
+
+fieldset {
+    border: none;
+}
+
+.search-submit {
+    background-color: transparent;
+}
+
+button {
+    border: none;
+    color: $color_green-brand-colour;
+    &:hover {
+        border-color: none;
+        box-shadow: none;
+        background-color: none;
+    }
+    &:active,
+    &:focus {
+        border-color: none;
+        box-shadow: none;
+    }
 }
