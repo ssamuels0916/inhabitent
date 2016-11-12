@@ -284,7 +284,7 @@ h5,
 h6 {
   clear: both;
   font-family: "Novecento", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal; }
 
 /* Copy */
@@ -905,6 +905,7 @@ object {
         flex: 25%; }
     .footer-left .contact-us h3,
     .footer-left .business-hours h3 {
+      letter-spacing: 2px;
       text-transform: uppercase;
       color: #d99054; }
     .footer-left .contact-us p,
@@ -927,7 +928,8 @@ object {
   .footer-bottom span {
     text-transform: uppercase; }
   .footer-bottom p {
-    color: white; }
+    color: white;
+    font-family: "Novecento", sans-serif; }
 
 /*--------------------------------------------------------------
 # Login Logo Styling
@@ -992,7 +994,8 @@ body .hero-image {
 .inhabitent-journal h2 {
   text-transform: uppercase;
   text-align: center;
-  font-size: 2rem; }
+  font-size: 2rem;
+  font-weight: 200; }
 
 .home .get-posts {
   display: -ms-flexbox;
@@ -1237,6 +1240,8 @@ a.adventure-text {
     padding: 10px; }
     .archive .allProducts .product-details p {
       margin: 0; }
+    .archive .allProducts .product-details:before {
+      border-bottom: 1px dotted black; }
 
 .archive .entry-header {
   border: 1px solid #e1e1e1; }
@@ -1584,3 +1589,40 @@ button {
 
 .search-results h1.page-title {
   font-weight: 600; }
+
+/*--------------------------------------------------------------
+# Comments Section
+--------------------------------------------------------------*/
+label {
+  font-size: 1.2rem; }
+
+ol.comment-list {
+  list-style: none; }
+
+.comment-respond #commentform {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  width: 100%; }
+  .comment-respond #commentform p.comment-form-comment {
+    width: 100%; }
+  .comment-respond #commentform p.comment-form-author {
+    width: 50%;
+    margin-right: 2%; }
+    .comment-respond #commentform p.comment-form-author input#author {
+      width: 100%; }
+  .comment-respond #commentform p.comment-form-email {
+    width: 48%; }
+    .comment-respond #commentform p.comment-form-email input#email {
+      width: 100%; }
+  .comment-respond #commentform label {
+    width: 100%; }
+    .comment-respond #commentform label input#email {
+      width: 100%; }
+  .comment-respond #commentform p.comment-form-url {
+    width: 100%; }
+    .comment-respond #commentform p.comment-form-url input#url {
+      width: 100%; }
+  .comment-respond #commentform p.form-submit {
+    width: 100%; }

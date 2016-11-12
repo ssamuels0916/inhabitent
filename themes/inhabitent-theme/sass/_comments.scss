@@ -1,0 +1,50 @@
+/*--------------------------------------------------------------
+# Comments Section
+--------------------------------------------------------------*/
+
+label {
+    font-size: 1.2rem;
+}
+
+ol.comment-list {
+    list-style: none;
+}
+
+.comment-respond {
+    #commentform {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        p.comment-form-comment {
+            width: 100%;
+        }
+        p.comment-form-author {
+            width: 50%;
+            margin-right: 2%;
+            input#author {
+                width: 100%;
+            }
+        }
+        p.comment-form-email {
+            width: 48%;
+            input#email {
+                width: 100%;
+            }
+        }
+        label {
+            width: 100%;
+            input#email {
+                width: 100%;
+            }
+        }
+        p.comment-form-url {
+            width: 100%;
+            input#url {
+                width: 100%;
+            }
+        }
+        p.form-submit {
+            width: 100%;
+        }
+    }
+}

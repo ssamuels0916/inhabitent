@@ -15,6 +15,7 @@
     .business-hours {
         flex: 25%;
         h3 {
+            letter-spacing: 2px;
             text-transform: uppercase;
             color: $brand_color_orange;
         }
@@ -44,5 +45,6 @@
     }
     p {
         color: white;
+        font-family: $font_headers;
     }
 }
