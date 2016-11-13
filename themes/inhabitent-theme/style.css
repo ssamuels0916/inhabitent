@@ -498,8 +498,9 @@ a {
   top: 0; }
 
 .logo {
-  height: 40px;
-  margin-left: 30px; }
+  height: 35px;
+  margin-left: 30px;
+  padding-top: 2px; }
 
 .main-navigation {
   display: -ms-flexbox;
@@ -575,7 +576,7 @@ a {
   display: none; }
 
 .menu-menu-1-container {
-  padding-top: 14px; }
+  padding-top: 10px; }
 
 /*--------------------------------------------------------------
 # Search Field
@@ -1507,7 +1508,7 @@ label {
     top: 50%;
     left: 45%;
     color: white;
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px; }
@@ -1534,10 +1535,6 @@ label {
 /*--------------------------------------------------------------
 # Search Field
 --------------------------------------------------------------*/
-.search-form {
-  right: 20px;
-  top: 1px; }
-
 .search-field {
   background-color: transparent;
   background-position: 5px center;
@@ -1546,8 +1543,7 @@ label {
   border: none;
   cursor: pointer;
   height: 37px;
-  margin: 3px 0;
-  padding: 0 0 0 34px;
+  /*padding: 0 0 0 34px;*/
   position: relative;
   transition: width 400ms ease, background 400ms ease;
   width: 0;
@@ -1560,12 +1556,12 @@ label {
 
 .search-form input[type="search"] {
   -webkit-appearance: textfield;
-  padding-left: 32px;
   color: none;
   background-color: none; }
 
 fieldset {
-  border: none; }
+  border: none;
+  padding: 0; }
 
 .search-submit {
   background-color: transparent; }
