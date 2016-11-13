@@ -22,9 +22,7 @@ get_header(); ?>
               <?php while ( have_posts() ) : the_post(); ?>
 
                 <?php get_template_part( 'template-parts/content' ); ?>
-                  <div id="read-more">
-                    <a href="<?php the_permalink(); ?>">Read entry <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-                  </div>
+                  
                   <?php endwhile; ?>
 
                     <?php the_posts_navigation(); ?>

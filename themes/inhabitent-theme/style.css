@@ -256,8 +256,8 @@ th {
 
 @font-face {
   font-family: 'Novecento';
-  src: url("../fonts/Novecentosanswide-Bold-webfont.eot");
-  src: url("../fonts/Novecentosanswide-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Novecentosanswide-Bold-webfont.woff2") format("woff2"), url("../fonts/Novecentosanswide-Bold-webfont.woff") format("woff"), url("../fonts/Novecentosanswide-Bold-webfont.ttf") format("truetype"), url("../fonts/Novecentosanswide-Bold-webfont.svg#novecento_sans_wide_bookbold") format("svg");
+  src: url("../fonts/novecentosanswide-demibold-webfont.eot");
+  src: url("../fonts/novecentosanswide-demibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/novecentosanswide-demibold-webfont.woff2") format("woff2"), url("../fonts/novecentosanswide-demibold-webfont.woff") format("woff"), url("../fonts/novecentosanswide-demibold-webfont.ttf") format("truetype"), url("../fonts/novecentosanswide-demibold-webfont.svg#novecento_sans_wide_bookbold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
@@ -576,7 +576,7 @@ a {
   display: none; }
 
 .menu-menu-1-container {
-  padding-top: 10px; }
+  padding-top: 8px; }
 
 /*--------------------------------------------------------------
 # Search Field
@@ -771,6 +771,18 @@ span.day-of-week {
   font-size: 1.8rem;
   letter-spacing: 2px; }
 
+a.read-more {
+  text-decoration: none;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid black;
+  color: black;
+  text-transform: uppercase; }
+  a.read-more:hover {
+    background-color: #248A83;
+    color: white;
+    border: none; }
+
 .blog .entry-content .entry-header img {
   width: 65%; }
 
@@ -779,20 +791,6 @@ span.day-of-week {
 
 .blog .site-main {
   margin-top: 7%; }
-
-#read-more {
-  margin-bottom: 5%; }
-  #read-more a {
-    text-decoration: none;
-    padding: 10px;
-    margin: 5px;
-    border: 1px solid black;
-    color: black;
-    text-transform: uppercase; }
-    #read-more a:hover {
-      background-color: #248A83;
-      color: white;
-      border: none; }
 
 .blog .entry-title {
   position: relative;
@@ -826,6 +824,9 @@ span.day-of-week {
 /*Single Post Pages*/
 .single-post .site-main {
   margin-top: 10%; }
+
+p.BodyA {
+  line-height: 1.85; }
 
 /*--------------------------------------------------------------
 # Media
@@ -1552,12 +1553,14 @@ label {
 .search-field:focus {
   cursor: text;
   outline: 0;
-  width: 230px; }
+  width: 230px;
+  padding-left: 5px; }
 
 .search-form input[type="search"] {
   -webkit-appearance: textfield;
   color: none;
-  background-color: none; }
+  background-color: none;
+  padding-left: 32px; }
 
 fieldset {
   border: none;
@@ -1585,7 +1588,7 @@ button {
   display: flex; }
 
 .search-results .content-area {
-  width: 60%;
+  width: 100%;
   margin-left: 5%;
   border-right: 1px solid #e1e1e1; }
 
@@ -1594,7 +1597,37 @@ button {
   padding-right: 5%; }
 
 .search-results h1.page-title {
-  font-weight: 600; }
+  font-weight: 600;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #e1e1e1;
+  font-size: 2.8rem; }
+
+.search-results .entry-title {
+  font-family: "Novecento", sans-serif;
+  font-size: 2.1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+  letter-spacing: 2px; }
+  .search-results .entry-title a {
+    text-decoration: none;
+    color: #248A83;
+    font-weight: 600; }
+  .search-results .entry-title:hover {
+    color: #2f1339; }
+
+/*
+* Search No Results page 
+*/
+.search-no-results .site-content {
+  display: -ms-flexbox;
+  display: flex; }
+
+.search-no-results .content-area {
+  border-right: 1px solid #e1e1e1;
+  width: 100%; }
+
+.search-no-results .site-main {
+  margin: 30% 5% 0 5%; }
 
 /*--------------------------------------------------------------
 # Comments Section

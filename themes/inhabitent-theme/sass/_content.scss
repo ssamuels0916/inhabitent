@@ -63,6 +63,20 @@
 }
 
 //main content area - Journal Page
+a.read-more {
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid black;
+    color: black;
+    text-transform: uppercase;
+    &:hover {
+        background-color: $color_green-brand-colour;
+        color: white;
+        border: none;
+    }
+}
+
 .blog .entry-content .entry-header img {
     width: 65%;
 }
@@ -73,23 +87,6 @@
 
 .blog .site-main {
     margin-top: 7%;
-}
-
-#read-more {
-    margin-bottom: 5%;
-    a {
-        text-decoration: none;
-        padding: 10px;
-        margin: 5px;
-        border: 1px solid black;
-        color: black;
-        text-transform: uppercase;
-        &:hover {
-            background-color: $color_green-brand-colour;
-            color: white;
-            border: none;
-        }
-    }
 }
 
 //Headers - Journal Page
@@ -131,4 +128,8 @@
 
 .single-post .site-main {
     margin-top: 10%;
+}
+
+p.BodyA {
+    line-height: 1.85;
 }
