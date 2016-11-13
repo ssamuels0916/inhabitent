@@ -22,8 +22,14 @@
         p {
             margin: 0;
         }
-        &:before {
-            border-bottom: 1px dotted black;
+        p:before {
+            content: '';
+            position: absolute;
+            bottom: .4rem;
+            width: 100%;
+            height: 0;
+            line-height: 0;
+            border-bottom: 2px dotted red;
         }
     }
 }
@@ -143,6 +149,10 @@ Header Styling - sub navigation
         font-weight: 600;
         font-weight: bold;
     }
+}
+
+.single-product .read-more {
+    display: none;
 }
 
 .social a {
