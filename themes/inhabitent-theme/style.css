@@ -1247,14 +1247,6 @@ a.adventure-text {
     padding: 10px; }
     .archive .allProducts .product-details p {
       margin: 0; }
-    .archive .allProducts .product-details p:before {
-      content: '';
-      position: absolute;
-      bottom: .4rem;
-      width: 100%;
-      height: 0;
-      line-height: 0;
-      border-bottom: 2px dotted red; }
 
 .archive .entry-header {
   border: 1px solid #e1e1e1; }
@@ -1632,3 +1624,13 @@ ol.comment-list {
 .comment-content a {
   text-decoration: none;
   color: #248A83; }
+
+.comment-respond .logged-in-as a {
+  text-decoration: none;
+  color: #248A83; }
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+.error404 .content-area {
+  margin: 10%; }
