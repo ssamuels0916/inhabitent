@@ -36,7 +36,7 @@ get_header(); ?>
               <span>$
 <?php echo CFS()->get( 'product_price' ); ?>
 </span>
-              <?php the_excerpt(); ?>
+              <?php the_content(); ?>
                 <div class='social'>
                   <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> Like</a>
                   <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet</a>

@@ -826,7 +826,7 @@ a.read-more {
 .single-post .site-main {
   margin-top: 10%; }
 
-p.BodyA {
+.single-post .BodyA {
   line-height: 1.85; }
 
 /*--------------------------------------------------------------
@@ -1388,6 +1388,7 @@ Header Styling - sub navigation
     color: white;
     height: auto;
     font-family: "Novecento", sans-serif;
+    font-size: 2.1rem;
     font-weight: 600;
     letter-spacing: 2px; }
     .blog .entry-title a:hover {
