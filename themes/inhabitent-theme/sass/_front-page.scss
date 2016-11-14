@@ -24,7 +24,7 @@
                 .shop-section {
                     display: flex;
                     justify-content: space-around;
-                    margin: 2% 10% 5% 10%;
+                    margin: 2% 5% 5% 5%;
                     padding: 2%;
                 }
                 
@@ -59,7 +59,7 @@
                 .inhabitent-journal h2 {
                     text-transform: uppercase;
                     text-align: center;
-                    font-size: 2rem;
+                    font-size: 2.4rem;
                     font-weight: 200;
                 }
                 
@@ -75,9 +75,11 @@
                     border: 1px solid $color_light-grey-brand-colour;
                     h3 a {
                         text-decoration: none;
-                        color: black;
+                        color: $color_green-brand-colour;
+                        font-size: 1.4rem;
+                        font-weight: bold;
                         &:hover {
-                            color: $color_green-brand-colour;
+                            color: black;
                         }
                     }
                     img {
@@ -99,9 +101,11 @@
                 }
                 
                 .journal-info {
-                    margin: 2rem;
+                    margin: 5%;
+                    line-height: 1.2;
                     p {
                         margin: 0;
+                        font-size: .8rem;
                     }
                     h3 {
                         margin-bottom: 35px;
@@ -190,6 +194,7 @@
                             a {
                                 @include adventure-links;
                                 padding: 4%;
+                                line-height: 3.2rem;
                             }
                         }
                         a.adventure-text {
@@ -220,6 +225,9 @@
                             a {
                                 @include adventure-links;
                                 padding: 0;
+                                line-height: 2.2rem;
+                                font-size: 1.8rem;
+                                padding: 2% 8%;
                             }
                         }
                         a.adventure-text {
@@ -250,6 +258,9 @@
                             a {
                                 @include adventure-links;
                                 padding: 0;
+                                line-height: 2.2rem;
+                                font-size: 1.8rem;
+                                padding: 2% 8%;
                             }
                         }
                         a.adventure-text {
