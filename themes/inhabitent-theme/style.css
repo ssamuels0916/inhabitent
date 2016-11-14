@@ -1257,6 +1257,20 @@ a.adventure-text {
 .archive .product-details p::before {
   content: '$'; }
 
+.archive .product-details {
+  max-width: 20em;
+  padding: 0;
+  overflow-x: hidden;
+  list-style: none; }
+  .archive .product-details span {
+    background-color: white; }
+
+.archive .entry-title:after {
+  float: right;
+  width: 0;
+  white-space: nowrap;
+  content: " . . . . . . . . . "; }
+
 .archive .entry-header {
   border: 1px solid #e1e1e1; }
   .archive .entry-header img {
