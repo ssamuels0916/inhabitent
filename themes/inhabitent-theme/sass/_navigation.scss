@@ -103,6 +103,12 @@ a {
     .current_page_ancestor>a {}
 }
 
+.site-title {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
 
 /** logged in **/
 

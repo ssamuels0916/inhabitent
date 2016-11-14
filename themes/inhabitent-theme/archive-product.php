@@ -49,9 +49,9 @@ $terms = get_terms('product_type'); ?>
                         <div class="product-details">
                           <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
-                            <p>
+                            <span><p>
                               <?php echo CFS()->get( 'product_price' ); ?>
-                            </p>
+                            </p></span>
                         </div>
                   </header>
                   <!-- .entry-header -->

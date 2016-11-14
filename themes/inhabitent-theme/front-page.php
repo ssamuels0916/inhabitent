@@ -7,7 +7,10 @@ The template for the home page.
 */
 
 get_header();
+
+
 ?>
+
   <section class="hero-image">
     <img src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-full.svg';
 ?>" class="hero-img" alt="inhabitent circle logo" />

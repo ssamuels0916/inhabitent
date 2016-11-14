@@ -538,6 +538,11 @@ a {
     color: #248A83;
     text-transform: uppercase; }
 
+.site-title {
+  position: absolute;
+  top: -9999px;
+  left: -9999px; }
+
 /** logged in **/
 .admin-bar .container {
   top: 32px; }
@@ -716,7 +721,8 @@ button {
 .widget-title {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  letter-spacing: 2px; }
 
 span.day-of-week {
   font-weight: bold; }
@@ -1248,6 +1254,9 @@ a.adventure-text {
     .archive .allProducts .product-details p {
       margin: 0; }
 
+.archive .product-details p::before {
+  content: '$'; }
+
 .archive .entry-header {
   border: 1px solid #e1e1e1; }
   .archive .entry-header img {
@@ -1390,7 +1399,8 @@ Header Styling - sub navigation
     font-family: "Novecento", sans-serif;
     font-size: 2.1rem;
     font-weight: 600;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    line-height: .5; }
     .blog .entry-title a:hover {
       color: antiquewhite; }
 
@@ -1451,6 +1461,9 @@ Header Styling - sub navigation
 .entry-content p.BodyA {
   line-height: 1.75; }
 
+.entry-content {
+  margin-bottom: 10%; }
+
 /*--------------------------------------------------------------
 # Find-Us Page
 --------------------------------------------------------------*/
@@ -1470,7 +1483,8 @@ Header Styling - sub navigation
 
 .page-id-29 .entry-title {
   font-weight: bold;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 2.4rem; }
 
 .page-id-29 .entry-content h2 {
   font-size: 2rem;
@@ -1512,7 +1526,7 @@ label {
     top: 50%;
     left: 45%;
     color: white;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px; }
