@@ -1356,8 +1356,9 @@ Header Styling - sub navigation
     .single-product article .entry-content h2 {
       margin: 0 0 2% 0; }
   .single-product article span {
-    font-family: "merriweather", serif;
-    font-weight: bold; }
+    font-family: "Novecento", sans-serif;
+    font-size: 1.8rem;
+    font-weight: normal; }
   .single-product article p {
     padding-bottom: 2rem;
     font-size: 1rem;
@@ -1415,14 +1416,14 @@ Header Styling - sub navigation
   /*max-width: 70%;*/
   left: 0;
   top: 0;
-  /*width: 50%;*/
+  width: 68%;
   margin-top: 2.25rem; }
   .blog .entry-title a {
     text-decoration: none;
     color: white;
     height: auto;
     font-family: "Novecento", sans-serif;
-    font-size: 2.1rem;
+    font-size: 2rem;
     font-weight: 600;
     letter-spacing: 2px;
     line-height: .5; }
@@ -1446,15 +1447,17 @@ Header Styling - sub navigation
     color: white;
     height: auto; }
 
-.blog .entry-meta {
+.entry-meta {
   position: absolute;
   background-color: #248A83;
   color: white;
   padding: .75rem 1rem;
   text-transform: uppercase;
+  font-family: "Novecento", sans-serif;
+  font-size: .9rem;
   bottom: 9px;
   right: 0; }
-  .blog .entry-meta a {
+  .entry-meta a {
     text-decoration: none;
     color: white; }
 
@@ -1483,9 +1486,6 @@ Header Styling - sub navigation
 .single-post .contact-info {
   margin-top: 40%; }
 
-.entry-content p.BodyA {
-  line-height: 1.75; }
-
 .entry-content {
   margin-bottom: 10%; }
 
@@ -1499,7 +1499,7 @@ Header Styling - sub navigation
 
 .page-id-29 .content-area {
   border-right: 1px solid #e1e1e1;
-  width: 100%;
+  width: 97%;
   margin-left: 5%;
   padding-right: 5%; }
 

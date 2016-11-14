@@ -34,14 +34,14 @@
     /*max-width: 70%;*/
     left: 0;
     top: 0;
-    /*width: 50%;*/
+    width: 68%;
     margin-top: 2.25rem;
     a {
         text-decoration: none;
         color: white;
         height: auto;
         font-family: $font_headers;
-        font-size: 2.1rem;
+        font-size: 2rem;
         font-weight: 600;
         letter-spacing: 2px;
         line-height: .5;
@@ -70,12 +70,14 @@
     }
 }
 
-.blog .entry-meta {
+.entry-meta {
     position: absolute;
     background-color: $color_green-brand-colour;
     color: white;
     padding: .75rem 1rem;
     text-transform: uppercase;
+    font-family: $font_headers;
+    font-size: .9rem;
     bottom: 9px;
     right: 0;
     a {
@@ -113,10 +115,6 @@
 
 .single-post .contact-info {
     margin-top: 40%;
-}
-
-.entry-content p.BodyA {
-    line-height: 1.75;
 }
 
 .entry-content {

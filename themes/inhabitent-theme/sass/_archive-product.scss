@@ -137,8 +137,9 @@ Header Styling - sub navigation
             }
         }
         span {
-            font-family: $font_base;
-            font-weight: bold;
+            font-family: $font_headers;
+            font-size: 1.8rem;
+            font-weight: normal;
         }
         p {
             padding-bottom: 2rem;
