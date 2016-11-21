@@ -166,10 +166,12 @@ a {
 
 .search-form {
     right: 20px;
-    top: 1px;
+    top: 0;
+    padding-right: 10px;
 }
 
 .search-field {
+    display: none;
     background-color: transparent;
     font-family: $font_headers;
     font-size: 1rem;
@@ -177,24 +179,24 @@ a {
     background-repeat: no-repeat;
     background-size: 24px 24px;
     border: none;
-    cursor: pointer;
     height: 37px;
     position: relative;
     -webkit-transition: width 400ms ease, background 400ms ease;
     transition: width 400ms ease, background 400ms ease;
-    width: 0;
+    width: 230px;
     color: black;
+    padding-right: 10px;
 }
 
-.search-field:focus {
+
+/*.search-field:focus {
     cursor: text;
     outline: 0;
     width: 230px;
-}
+}*/
 
 .search-form input[type="search"] {
     -webkit-appearance: textfield;
-    padding-left: 32px;
     color: none;
     background-color: none;
 }
@@ -206,6 +208,7 @@ fieldset {
 
 .search-submit {
     background-color: transparent;
+    padding-top: 8px;
 }
 
 button {

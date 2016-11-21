@@ -120,11 +120,10 @@ function products_per_post_page( $query ) {
     }
 }
 add_action('pre_get_posts','products_per_post_page' );
-
 ?>
-
-
 <?php
+
+// You may have to delete this code if locked out of wp-admin again
 
 /**
  * Customize excerpt length and style.
@@ -132,6 +131,8 @@ add_action('pre_get_posts','products_per_post_page' );
  * @param  string The raw post content.
  * @return string
  */
+
+
 function red_wp_trim_excerpt( $text ) {
 	$raw_excerpt = $text;
 	
@@ -174,3 +175,5 @@ function red_wp_trim_excerpt( $text ) {
 
 remove_filter( 'get_the_excerpt', 'wp_trim_excerpt' );
 add_filter( 'get_the_excerpt', 'red_wp_trim_excerpt' );
+
+?>
