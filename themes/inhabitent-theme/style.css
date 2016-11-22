@@ -742,7 +742,7 @@ span.day-of-week {
 .widget a {
   text-decoration: none;
   font-family: "merriweather", serif;
-  font-weight: normal;
+  font-weight: 100;
   font-size: 1rem;
   color: #248A83; }
 
