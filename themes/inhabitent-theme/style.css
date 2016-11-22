@@ -953,6 +953,9 @@ object {
     color: white;
     font-family: "Novecento", sans-serif; }
 
+.footer-logo img {
+  height: 65px; }
+
 /*--------------------------------------------------------------
 # Login Logo Styling
 --------------------------------------------------------------*/
