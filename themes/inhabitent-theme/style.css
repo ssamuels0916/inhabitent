@@ -1436,7 +1436,7 @@ Header Styling - sub navigation
     color: white;
     height: auto;
     font-family: "Novecento", sans-serif;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     font-weight: bold;
     letter-spacing: 2px;
     line-height: .5; }
@@ -1693,9 +1693,9 @@ ol.comment-list {
   font-size: 1rem;
   color: #808080; }
 
-.reply {
+.comment-reply-link {
   font-family: "merriweather", serif;
-  font-weight: normal;
+  font-weight: 100;
   font-size: 1rem;
   color: #248A83; }
 
