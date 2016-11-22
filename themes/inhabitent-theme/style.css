@@ -499,7 +499,7 @@ a {
   top: 0; }
 
 .logo {
-  height: 35px;
+  height: 60px;
   margin-left: 30px;
   padding-top: 2px; }
 
@@ -725,7 +725,7 @@ button {
 .widget-title {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   letter-spacing: 2px; }
 
 span.day-of-week {
