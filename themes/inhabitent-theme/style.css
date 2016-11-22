@@ -247,6 +247,7 @@ th {
   font-weight: normal;
   font-style: normal; }
 
+/*novecentro sans wide*/
 @font-face {
   font-family: 'Novecento';
   src: url("../fonts/Novecentosanswide-Normal-webfont.eot");
@@ -256,8 +257,8 @@ th {
 
 @font-face {
   font-family: 'Novecento';
-  src: url("../fonts/novecentosanswide-demibold-webfont.eot");
-  src: url("../fonts/novecentosanswide-demibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/novecentosanswide-demibold-webfont.woff2") format("woff2"), url("../fonts/novecentosanswide-demibold-webfont.woff") format("woff"), url("../fonts/novecentosanswide-demibold-webfont.ttf") format("truetype"), url("../fonts/novecentosanswide-demibold-webfont.svg#novecento_sans_wide_bookbold") format("svg");
+  src: url("../fonts/Novecentosanswide-DemiBold-webfont.eot");
+  src: url("../fonts/Novecentosanswide-DemiBold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Novecentosanswide-DemiBold-webfont.woff2") format("woff2"), url("../fonts/Novecentosanswide-DemiBold-webfont.woff") format("woff"), url("../fonts/Novecentosanswide-DemiBold-webfont.ttf") format("truetype"), url("../fonts/Novecentosanswide-DemiBold-webfont.svg#novecento_sans_widedemibold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
@@ -712,7 +713,8 @@ button {
 
 /*Style sidebar*/
 .widget-area {
-  padding: 10% 5% 0 5%; }
+  padding: 10% 5% 0 5%;
+  border-left: 1px solid #e1e1e1; }
   .widget-area a {
     font-family: "merriweather", serif;
     text-decoration: none;
@@ -723,7 +725,7 @@ button {
 .widget-title {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   letter-spacing: 2px; }
 
 span.day-of-week {
@@ -799,7 +801,8 @@ a.read-more {
   width: 65%; }
 
 .blog .site-main {
-  margin-top: 7%; }
+  padding-top: 10%;
+  padding-right: 5%; }
 
 .blog .entry-title {
   position: relative;
@@ -812,8 +815,7 @@ a.read-more {
   color: white; }
 
 .blog .entry-title .entry-content h2 {
-  text-transform: uppercase;
-  font-size: 2rem; }
+  text-transform: uppercase; }
 
 .cat-links,
 .tags-links {
@@ -832,10 +834,7 @@ a.read-more {
 
 /*Single Post Pages*/
 .single-post .site-main {
-  margin-top: 10%; }
-
-.single-post .BodyA {
-  line-height: 1.85; }
+  padding-top: 10%; }
 
 /*--------------------------------------------------------------
 # Media
@@ -1044,8 +1043,7 @@ body .hero-image {
       color: white; }
 
 .journal-info {
-  margin: 5%;
-  line-height: 1.2; }
+  margin: 5%; }
   .journal-info p {
     margin: 0;
     font-size: .8rem; }
@@ -1056,7 +1054,8 @@ body .hero-image {
 .adventure h2 {
   text-transform: uppercase;
   text-align: center;
-  font-size: 2rem; }
+  font-size: 2rem;
+  font-weight: normal; }
 
 .adventure-text {
   text-transform: uppercase; }
@@ -1069,7 +1068,7 @@ body .hero-image {
   -ms-flex-line-pack: justify;
       align-content: space-between;
   height: 600px;
-  margin: 40px 40px 140px 40px; }
+  margin: 40px 80px 140px 80px; }
   .adventure-block span {
     margin-top: 3%;
     padding: 20px;
@@ -1087,7 +1086,7 @@ body .hero-image {
   background-repeat: no-repeat;
   background-size: cover;
   height: 99%;
-  width: 40%;
+  width: 44%;
   background-position-x: 50%;
   margin-right: 15px;
   position: relative; }
@@ -1336,9 +1335,9 @@ Header Styling - sub navigation
   padding: 0;
   margin: 5% 0 5%; }
   .archive .shop-stuff-items a {
-    margin-right: 5px;
+    margin-right: 35px;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #248A83; }
     .archive .shop-stuff-items a:hover {
       color: black; }
@@ -1412,29 +1411,33 @@ Header Styling - sub navigation
     width: 100%; }
 
 .blog .entry-title {
+  text-transform: uppercase;
   position: absolute;
   padding: .75rem 1.5rem;
+  line-height: 1.8;
   background-color: #248A83;
   /*max-width: 70%;*/
   left: 0;
   top: 0;
   width: 68%;
-  margin-top: 2.25rem; }
+  margin-top: 2.6rem; }
   .blog .entry-title a {
     text-decoration: none;
     color: white;
     height: auto;
     font-family: "Novecento", sans-serif;
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 2.2rem;
+    font-weight: bold;
     letter-spacing: 2px;
     line-height: .5; }
     .blog .entry-title a:hover {
       color: antiquewhite; }
 
 .single-post .entry-title {
+  text-transform: uppercase;
   position: absolute;
-  padding: .5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 2.4rem;
   line-height: 1.2;
   letter-spacing: 2px;
   background-color: #248A83;
@@ -1442,8 +1445,7 @@ Header Styling - sub navigation
   left: 0;
   top: 0;
   /*width: 50%;*/
-  margin-top: 2.25rem;
-  font-weight: 600; }
+  margin-top: 2.25rem; }
   .single-post .entry-title a {
     text-decoration: none;
     color: white;
@@ -1675,4 +1677,11 @@ ol.comment-list {
 # Navigation
 --------------------------------------------------------------*/
 .error404 .content-area {
-  margin: 10%; }
+  display: -ms-flexbox;
+  display: flex; }
+
+.error404 .site-main {
+  padding: 10%; }
+
+.not-found {
+  padding-right: 70px; }

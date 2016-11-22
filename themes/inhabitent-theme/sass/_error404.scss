@@ -3,5 +3,13 @@
 --------------------------------------------------------------*/
 
 .error404 .content-area {
-    margin: 10%;
+    display: flex;
+}
+
+.error404 .site-main {
+    padding: 10%;
+}
+
+.not-found {
+    padding-right: 70px;
 }

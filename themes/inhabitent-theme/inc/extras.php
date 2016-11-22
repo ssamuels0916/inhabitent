@@ -120,8 +120,7 @@ function products_per_post_page( $query ) {
     }
 }
 add_action('pre_get_posts','products_per_post_page' );
-?>
-<?php
+
 
 // You may have to delete this code if locked out of wp-admin again
 

@@ -6,7 +6,7 @@
         $('.search-submit').on('click', function(event) {
             event.preventDefault();
             event.stopPropagation();
-            $('.search-field').toggle().focus();
+            $('.search-field').toggle().blur();
         });
 
         $('.site-content').click(function() {
