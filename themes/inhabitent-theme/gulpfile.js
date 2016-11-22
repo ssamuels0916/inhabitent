@@ -63,7 +63,7 @@ gulp.task('browser-sync', function() {
     ];
 
     browserSync.init(files, {
-        proxy: 'localhost/inhabitent/',
+        proxy: 'http://localhost/inhabitent/', //Change this line to localhost
     });
 
     gulp.watch(files).on('change', browserSync.reload);
