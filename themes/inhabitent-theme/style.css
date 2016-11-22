@@ -725,7 +725,7 @@ button {
 .widget-title {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   letter-spacing: 2px; }
 
 span.day-of-week {
@@ -734,10 +734,8 @@ span.day-of-week {
 .textwidget {
   line-height: 1.85;
   font-family: "merriweather", serif;
-  font-weight: normal;
+  font-weight: 100;
   font-size: 1rem; }
-  .textwidget p {
-    font-size: 1.2rem; }
 
 .widget a {
   text-decoration: none;
@@ -1488,10 +1486,10 @@ Header Styling - sub navigation
     color: white; }
 
 .blog .site-main {
-  width: 75%; }
+  width: 100%; }
 
 .single-post .site-main {
-  width: 75%;
+  width: 100%;
   margin-left: 5%; }
 
 .blog .contact-info {
@@ -1513,7 +1511,7 @@ Header Styling - sub navigation
 
 .page-id-29 .content-area {
   margin-left: 5%;
-  width: 70%; }
+  width: 100%; }
 
 .page-id-29 .site-main {
   padding-top: 10%; }
@@ -1629,7 +1627,7 @@ label {
   display: flex; }
 
 .search-no-results .content-area {
-  width: 70%; }
+  width: 100%; }
 
 .search-no-results .site-main {
   margin: 30% 5% 0 5%; }
@@ -1648,7 +1646,7 @@ ol.comment-list {
   display: flex;
   -ms-flex-flow: row wrap;
       flex-flow: row wrap;
-  width: 100%; }
+  width: 95%; }
   .comment-respond #commentform p.comment-form-comment {
     width: 100%; }
   .comment-respond #commentform p.comment-form-author {
