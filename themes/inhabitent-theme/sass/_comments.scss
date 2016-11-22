@@ -58,3 +58,27 @@ ol.comment-list {
     text-decoration: none;
     color: $color_green-brand-colour;
 }
+
+.comments-title {
+    font-size: 2.1rem;
+}
+
+.comment-body {
+    border-bottom: 1px solid $color_light-grey-brand-colour;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.comment-metadata {
+    font-family: $font_base;
+    font-weight: normal;
+    font-size: 1rem;
+    color: $brand_color_grey;
+}
+
+.reply {
+    font-family: $font_base;
+    font-weight: normal;
+    font-size: 1rem;
+    color: $color_green-brand-colour;
+}

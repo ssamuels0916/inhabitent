@@ -732,9 +732,19 @@ span.day-of-week {
   font-weight: bold; }
 
 .textwidget {
-  line-height: 1.85; }
+  line-height: 1.85;
+  font-family: "merriweather", serif;
+  font-weight: normal;
+  font-size: 1rem; }
   .textwidget p {
     font-size: 1.2rem; }
+
+.widget a {
+  text-decoration: none;
+  font-family: "merriweather", serif;
+  font-weight: normal;
+  font-size: 1rem;
+  color: #248A83; }
 
 /*--------------------------------------------------------------
 # Content 
@@ -1585,9 +1595,8 @@ label {
   display: flex; }
 
 .search-results .content-area {
-  width: 100%;
-  margin-left: 5%;
-  border-right: 1px solid #e1e1e1; }
+  width: 70%;
+  margin-left: 5%; }
 
 .search-results .site-main {
   margin-top: 10%;
@@ -1671,6 +1680,26 @@ ol.comment-list {
   text-decoration: none;
   color: #248A83; }
 
+.comments-title {
+  font-size: 2.1rem; }
+
+.comment-body {
+  border-bottom: 1px solid #e1e1e1;
+  width: 90%;
+  margin-bottom: 20px; }
+
+.comment-metadata {
+  font-family: "merriweather", serif;
+  font-weight: normal;
+  font-size: 1rem;
+  color: #808080; }
+
+.reply {
+  font-family: "merriweather", serif;
+  font-weight: normal;
+  font-size: 1rem;
+  color: #248A83; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -1681,5 +1710,10 @@ ol.comment-list {
 .error404 .site-main {
   padding: 10%; }
 
-.not-found {
-  padding-right: 70px; }
+.error404 .page-title {
+  font-size: 2.2rem;
+  font-weight: bold; }
+
+.cat-item {
+  text-transform: none;
+  font-weight: normal; }

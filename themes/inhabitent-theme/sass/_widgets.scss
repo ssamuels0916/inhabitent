@@ -51,7 +51,20 @@ span.day-of-week {
 
 .textwidget {
     line-height: 1.85;
+    font-family: $font_base;
+    font-weight: normal;
+    font-size: 1rem;
     p {
         font-size: 1.2rem;
+    }
+}
+
+.widget {
+    a {
+        text-decoration: none;
+        font-family: $font_base;
+        font-weight: normal;
+        font-size: 1rem;
+        color: $color_green-brand-colour;
     }
 }
