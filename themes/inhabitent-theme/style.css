@@ -1502,10 +1502,8 @@ Header Styling - sub navigation
   display: flex; }
 
 .page-id-29 .content-area {
-  border-right: 1px solid #e1e1e1;
-  width: 97%;
   margin-left: 5%;
-  padding-right: 5%; }
+  width: 70%; }
 
 .page-id-29 .site-main {
   padding-top: 10%; }
