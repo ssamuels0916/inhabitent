@@ -2,6 +2,10 @@
 
 A ficticious e-commerce site theme  developed for Wordpress.
 
+<p align="center">
+  <img src = "frontpage.png" width="1260px"/>
+</p>
+
 ## Technologies
 
 HTML5, CSS3, PHP and Javascript
