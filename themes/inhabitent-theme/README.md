@@ -1,6 +1,6 @@
 # Inhabitent Camping Supply Co.
 
-A ficticious e-commerce site theme  developed for Wordpress.
+An e-commerce site theme  developed for Wordpress.
 
 <p align="center">
   <img src = "frontpage.png" width="1260px"/>
@@ -14,5 +14,7 @@ HTML5, CSS3, PHP and Javascript
 
 The theme was build off the underscores theme template and customized using custom post types and taxonomies.
 
-
+<p align="center">
+  <img src = "shop_section.png" width="1260px"/>
+</p>
 
