@@ -285,7 +285,7 @@ h5,
 h6 {
   clear: both;
   font-family: "Novecento", sans-serif;
-  font-weight: 600;
+  font-weight: normal;
   font-style: normal; }
 
 /* Copy */
@@ -713,7 +713,7 @@ button {
 
 /*Style sidebar*/
 .widget-area {
-  padding: 10% 5% 0 5%;
+  padding: 10% 3% 0 5%;
   border-left: 1px solid #e1e1e1; }
   .widget-area a {
     font-family: "merriweather", serif;

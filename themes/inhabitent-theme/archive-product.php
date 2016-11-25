@@ -43,16 +43,20 @@ $terms = get_terms('product_type'); ?>
                   <header class="entry-header">
                     <?php if ( has_post_thumbnail() ) : ?>
                       <a href="<?php the_permalink() ; ?> ">
+                        <div class ="img-wrapper">
                         <?php the_post_thumbnail( 'large' ); ?>
+                        </div>
                       </a>
                       <?php endif; ?>
-                        <div class="product-details">
-                          <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+                      <div class="product-details">
+                        
+                            <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
-                            <span><p>
-                              <?php echo CFS()->get( 'product_price' ); ?>
-                            </p></span>
-                        </div>
+                              <span><p>
+                                <?php echo CFS()->get( 'product_price' ); ?>
+                              </p></span>
+                          </div>
+                      
                   </header>
                   <!-- .entry-header -->
 
