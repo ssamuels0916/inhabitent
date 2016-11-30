@@ -12,11 +12,15 @@
         </section>
 		<section class="about_copy">
 			<!--Our Story/Team copy-->
+			<div class='section'>
 			<?php echo CFS()->get( 'our_story_title' ); ?>
 			<?php echo CFS()->get( 'our_story' ); ?>
 			<?php echo CFS()->get( 'our_team_title' ); ?>
 			<?php echo CFS()->get( 'our_team' ); ?>
+		
 			</section>
+
+		
 			
 
 		</main><!-- #main -->
