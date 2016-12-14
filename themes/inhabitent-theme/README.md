@@ -12,9 +12,7 @@ HTML5, CSS3, PHP and Javascript
 
 ### Learnings
 
-The theme was build off the underscores theme template and customized using custom post types and taxonomies.
+The theme was built fro  the underscores theme template and customized using custom post types and taxonomies.
 
-<p align="center">
-  <img src = "shop_section.png" width="1260px"/>
-</p>
+
 
