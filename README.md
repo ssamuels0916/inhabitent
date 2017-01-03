@@ -3,7 +3,7 @@
 An e-commerce site theme  developed for Wordpress.
 
 <p align="center">
-  <img src = "frontpage.png" width="1260px"/>
+  <img src = "themes/inhabitent-theme/frontpage.png" width="1260px"/>
 </p>
 
 ## Technologies
